@@ -1,0 +1,132 @@
+@media screen and (max-width:400px){
+
+
+  .risks_showcase_container .title {
+    margin-top: 60%;
+    font-size: 25px !important;
+  }
+
+  .risks_showcase_container {
+    background: linear-gradient(rgba(0, 0, 0, .7) ,rgba(0, 0, 0, .5)), url("./../../imgs/melt--2.png") !important;
+  }
+  .arrow_container{
+    visibility: hidden;
+  }
+  .risks_floods_container{
+    padding-bottom: 80% !important;
+  }
+  .risks_famine_container .text_box{
+    width:100% !important;
+
+  }
+  .risks_famine_container {
+    overflow: hidden;
+  }
+  .risks_famine_container .images_container {
+    width:100% !important;
+    clear:  both;
+  }
+  .img--1{
+    opacity: 0%;
+  }
+  .img--2{
+    width:100% !important;
+    top:60% !important;
+    float :left !important;
+    left:0 !important;
+  }
+  .risks_floods_container .text_box {
+    padding: 5%;
+    width: 100% !important;
+  }
+}
+
+.risks_showcase_container{
+  height:100vh;
+  position: relative;
+  /* background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("./../../imgs/melt--1.png"); */
+  background-size:cover !important;
+  background-repeat: no-repeat;
+  padding-top:12.5%;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+/* @keyframes slide_in_left_away{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-1900px);
+
+  }
+}
+@keyframes slide_in_right_away{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(1900px);
+
+  }
+}
+@keyframes slide_in_right {
+  0%{
+    transform: translateX(1900px);
+  }
+  100%{
+    transform: translateX(0px);
+
+  }
+} */
+
+
+.background_risk--0{
+  background-position: right !important;
+  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0)),url("./../../imgs/melt--2.png");
+}
+
+/* .away_transition{
+  animation:slide_in_left_away .6s ease-in 1 !important;
+} */
+
+.background_risk--1{
+  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("./../../imgs/storm--1.png");
+}
+
+.background_risk--2{
+  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("./../../imgs/famine--1.png");
+}
+
+.risks_showcase_container .title{
+  width:70%;
+  line-height:1.5;
+  font-size:35px;
+}
+
+.risks_showcase_container .subtitle{
+  width:70%;
+  line-height:1.5;
+  margin-top:5%;
+  font-size:19px;
+}
+
+.risks_showcase_container .arrow_container{
+  position:  absolute;
+  top:90%;
+  width:100%;
+}
+
+.risks_showcase_container .arrow{
+  width:2.5%;
+  position: absolute;
+}
+
+.risks_showcase_container .arrow--1{
+ left:0%;
+}
+
+.risks_showcase_container .arrow--2{
+  left:90%;
+  transform: rotateY(180deg);
+}

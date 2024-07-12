@@ -1,0 +1,120 @@
+.risks_chart_container{
+  background:white;
+  color:black;
+  overflow: hidden;
+}
+
+.risks_chart_container .title{
+  padding:5%;
+  z-index:22;
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  color:white;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.risks_floods_container{
+  background:rgba(87,131,143,1);
+  padding:10%;
+}
+
+.risks_famine_container{
+  background:rgba(4, 13, 43, 1);
+  padding:10%;
+}
+
+table{
+  background: #e6e6e6 !important;
+  box-shadow: 0px 0px  10px rgba(0,0,0,.5);
+  text-align: left;
+  color: black !important;
+  width:100%;
+  border: 1px solid black;
+  padding-top:0px;
+  padding:0px;
+  position: relative;
+  z-index:99;
+  background:black;
+}
+
+.skew_container{
+  width:160%;
+  background:rgba(4, 13, 43, 1);
+  height:1600px;
+  padding:40%;
+  position: absolute;
+  top:20%;
+  transform:skew(20deg) rotate(60deg);
+  left:32%;
+  z-index:0;
+}
+
+.skew_container--3{
+  width:120%;
+  padding:50%;
+  background:white;
+  height:100px;
+  position: absolute;
+  top:0%;
+  left:0%;
+  z-index:0;
+}
+
+.skew_container--2{
+  background:rgba(87,131,143,1);
+  width:200%;
+  top:0%;
+  left:0%;
+  z-index:0;
+}
+
+.table_container{
+  padding:10%;
+  padding-top:0;
+}
+
+.risk_box {
+  border-radius: 10px;
+  height:10px;
+  width:100%;
+}
+
+.type{
+  font-size:14px;
+}
+
+.stats{
+  font-size:13px;
+  line-height: 1.5;
+}
+
+.high_risk{
+  background:red;
+}
+
+.moderate_risk{
+  background:yellow;
+}
+
+.low_risk{
+  background:limegreen;
+}
+
+th{
+  border-right:1px solid black;
+  text-align: center;
+  padding:20px;
+  border-bottom:1px solid black;
+  font-size:15px;
+  font-weight:600;
+}
+
+td{
+  border-bottom:1px solid black;
+  padding:10px;
+  font-weight:400;
+  text-align: center;
+  border-right:1px solid black;
+}

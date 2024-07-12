@@ -1,0 +1,32 @@
+@media screen and (max-width:400px){
+  .why_it_matters_container{
+    background: linear-gradient(rgba(0,0,0,4.7),rgba(0,0,0,.6),rgba(0,0,0,.8),rgba(0,0,0,.99)), url("./../../imgs/fire--1.png") !important;
+  }
+
+  .why_it_matters_container .title{
+    font-size:50px;
+    letter-spacing: 6px;
+  }
+
+}
+
+.why_it_matters_container{
+  width:100%;
+  padding-top:5%;
+  height:70vh;
+  background-image: cover;
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6),rgba(0,0,0,1)), url("./../../imgs/fire--1.png");
+}
+
+.why_it_matters_container .title{
+  font-size: 50px;
+  color:white;
+  letter-spacing: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.why_it_matters_container .description{
+  padding:2.5%;
+  text-align: center;
+}

@@ -1,0 +1,92 @@
+@media screen and (max-width:400px){
+  .emission_image--2{
+    visibility: hidden;
+  }
+
+  .emission_image--3{
+    visibility: hidden;
+  }
+
+  .emission_container .title{
+    text-align: center;
+    font-size:40px;
+  }
+
+  .emission_container .images_container{
+    width: 50%;
+    float: right;
+  }
+
+  .emission_image--1 {
+    position: relative;
+    width: 119%;
+  }
+
+  .emission_container .text_box{
+    width:90%;
+  }
+
+}
+
+.emission_container{
+  padding:10px;
+  background:  linear-gradient(rgba(30,79,88,1),rgb(30,79,88,1), rgb(87,131,143,1)),url("../../imgs/why_showcase.png");
+  color:white;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.emission_container .images_container{
+  width:40%;
+  float: right;
+}
+
+.emission_image{
+  position: absolute;
+  width:20%;
+  padding: 0px;
+  border:black 10px solid;
+}
+
+.emission_image img{
+  width:100%;
+  padding: 0px;
+}
+
+.emission_image--1{
+  width:25%;
+  top:55%;
+  z-index: 11;
+  right:20%;
+}
+
+.emission_image--1 img{
+  width:100%;
+}
+
+.emission_image--2{
+  width:25%;
+  top:25%;
+  z-index: 9;
+  right:10%;
+}
+
+.emission_image--3{
+  width:20%;
+  top:10%;
+  right:25%;
+}
+
+.emission_container .text_box{
+  width:40%;
+  float:left;
+  font-size:18px;
+  line-height:2;
+}
+
+.emission_container .title{
+  font-size: 32.5px;
+  margin-left:2.5%;
+  font-weight:200;
+}

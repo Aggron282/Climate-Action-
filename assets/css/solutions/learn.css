@@ -1,0 +1,32 @@
+.learn_more_container{
+  padding:5%;
+  background:linear-gradient(rgba(0, 0,0, .6), rgba(0,0,0,.5)), url("./../../imgs/solution_banner.png");
+  background-size: cover;
+}
+
+.learn_more_container .title {
+  color:white;
+  transition:  all .2s;
+  font-size: 70px;
+  margin-top:0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.learn_more_container .subtitle {
+  color:white;
+  margin-top: 0%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.learn_more_container button {
+  width:50%;
+  border:2px solid white;
+  border-radius:5px;
+  padding:10px;
+  margin-left:25%;
+  background:none;
+  color:white;
+  font-size:25px;
+}

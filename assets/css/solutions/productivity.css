@@ -1,0 +1,181 @@
+@media screen and (max-width:390px) {
+  .product_row  img{
+    width:100% !important;
+  }
+
+  .product_row .text_box {
+    width:100% !important;
+    text-align:center;
+    padding:2.5%;
+
+  }
+
+  .what_can_do_container{
+    margin-top:-5%;
+  }
+
+  .solutions_container .text_box{
+    width:100%;
+    margin-top:90%;
+  }
+
+  .solutions_container .text_box .title{
+    font-size:40px;
+  }
+
+  .solutions_container{
+    height:100vh;
+    background:linear-gradient(180deg, #2E87BB 0%, rgba(46, 135, 187, .8) 52%, rgba(87,131,143,.7) 70% ,rgba(87,131,143,1) 100%), url("https://www.sunrisemovement.org/wp-content/uploads/2023/06/GND4Communities_Header-2048x829.jpg");
+  }
+
+  .solutions_container .description{
+    width:80%;
+    margin-top:5%;
+  }
+
+  .productivity_container{
+    padding:30px;
+    padding-bottom:20% !important;
+  }
+
+  .productivity_container .description {
+    width: 100% !important;
+  }
+
+  .product_row .text_box .description{
+    text-align: justify;
+  }
+
+  .what_can_do_row .banner{
+    width:100%;
+  }
+
+  .learn_more_container .subtitle{
+    text-align: left !important;
+  }
+
+  .learn_more_container button {
+    margin-left:0% !important;
+  }
+
+  .what_can_do_row .description {
+    padding: 10px;
+    width:100%;
+  }
+
+  .learn_more_container .title{
+    margin-top:10% !important;
+    text-align: left !important;
+  }
+
+  .learn_more_container{
+    text-align: left !important;
+    padding-bottom: 50% !important;
+    padding-top: 10% !important;
+  }
+
+  .learn_more_container button {
+    margin-top: 15%;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 25%;
+    background: none;
+    color: white;
+    font-size: 25px;
+ }
+
+}
+
+.productivity_container{
+  padding:2.5%;
+  padding-bottom:5%;
+  padding-top:10%;
+  background:rgba(4, 13, 43, 1);
+}
+
+.productivity_container .title{
+  font-size:45px;
+  color:white;
+  margin-top:-1%;
+}
+
+.productivity_container .description{
+  width:60%;
+  margin-top:-2%;
+}
+
+.product_row{
+  border:6px solid rgba(87,131,143,1);
+  margin-top:2.5%;
+  overflow: hidden;
+  padding:5% 2.5%;
+  padding-left:0%;
+}
+
+.product_row img {
+  float:left;
+  width:50%;
+  filter: invert(54%) sepia(8%) saturate(1577%) hue-rotate(146deg) brightness(87%) contrast(85%);
+}
+
+.product_row .text_box {
+  float:right;
+  width:50%;
+}
+
+.product_row .text_box .title{
+  color:white;
+  font-size:40px;
+}
+
+.product_row .text_box .description{
+  color:white;
+  width:100%;
+  font-size:20px;
+}
+
+#help_form input {
+  width:80%;
+  height:40px;
+  padding:10px;
+  border:white 1px solid;
+  background:none;
+  color:white !important;
+  float:left;
+}
+
+#help_form input::after{
+  color:white;
+}
+
+#help_form button {
+  width:20%;
+  padding:10px;
+  float:right;
+  height:40px;
+  background:white;
+  color:black;
+  font-size:15px;
+  border:none;
+}
+
+.waiver_{
+  width:100%;
+  clear: both;
+  padding-top:5px;
+  font-size:15px;
+}
+
+.help_out_container{
+  overflow: hidden;
+  background:rgba(87,131,143,1);
+  padding:20px;
+  color:white;
+}
+
+.help_out_container  .title{
+  font-size:35px;
+  color:white;
+}

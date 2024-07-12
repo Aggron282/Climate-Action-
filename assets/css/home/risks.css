@@ -1,0 +1,175 @@
+@media  screen and (max-width:400px){
+  .risks_text_box{
+    width:100% !important;
+    margin:0% !important;
+  }
+
+  .gallery--1{
+    width: 300px !important;
+  }
+
+  .gallery--2, .gallery--3, .gallery--4, .gallery--5{
+    visibility: hidden !important;
+    height:0px !important;
+    width:0px !important;
+  }
+
+  .risks_description{
+    margin-left: 0% !important;
+  }
+
+  .risks_learn_button{
+    position: relative !important;
+    z-index:11 !important;
+    top:475px !important;
+    width:80% !important;
+    left:35px !important;
+  }
+
+  .risks_title {
+    text-align: center !important;
+    font-weight:200 !important;
+    margin:0% !important;
+    margin-top:10% !important;
+    margin-bottom:10% !important;
+    font-size:40px !important;
+  }
+
+  .risks_intro_container{
+    padding-bottom: 50px !important;
+  }
+
+  .risks_subtitle{
+    text-align: center !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    margin-top: -1% !important;
+  }
+  
+}
+
+.risks_intro_container{
+  overflow: hidden;
+}
+
+.risks_text_box{
+  float: left;
+  width:45%;
+}
+
+.risks_description{
+  margin-left: 5%;
+  font-size: 16px;
+  line-height:1.6;
+  text-align: justify;
+  font-weight:250;
+  font-family: "Inter Tight";
+
+}
+
+.risks_gallery_box{
+  margin-left: 10%;
+  width:40%;
+  margin-top:5%;
+  float:left;
+}
+
+.gallery--1{
+  float: left;
+  width:200px;
+  object-fit: contain;
+  height:400px;
+  margin:5px;
+}
+
+.gallery--3{
+  clear:both;
+  float: left;
+  width:410px;
+  margin:5px;
+  position: relative;
+  bottom:60px;
+  object-fit: cover;
+  height:200px;
+}
+
+.gallery--5{
+  float: left;
+  width:200px;
+  position: relative;
+  bottom:60px;
+  margin:5px;
+  object-fit: cover;
+  height:250px;
+}
+
+.gallery--4{
+  clear:both;
+  float: left;
+  width:200px;
+  margin:5px;
+  position: relative;
+  bottom:60px;
+  object-fit: cover;
+  height:250px;
+}
+
+.gallery--2{
+  float: left;
+  margin:5px;
+  width:200px;
+  object-fit: contain;
+  height:400px;
+}
+
+.risks_subtitle{
+  margin-left: 5%;
+  font-size: 12px;
+  font-family: "Kanit";
+  font-weight:300;
+  margin-top:-2.5%;
+}
+
+.risks_title{
+  font-size: 35px;
+  font-family: "Kanit";
+  font-weight: 500;
+  margin-left: 5%;
+
+}
+
+.risks_learn_button{
+  border:none;
+  border:none;
+  position: relative;
+  color:white;
+  letter-spacing: 3px;
+  font-weight:100;
+  margin-left:30%;
+  text-align: center;
+  background:none;
+  font-family: "Kanit";
+  font-size:20px;
+  margin-left:5%;
+}
+
+.risks_intro_container{
+  padding:10px 15px;
+  background:linear-gradient(rgb(30,79,88), #315468);
+  z-index:99;
+  color:white;
+}
+
+.risks_learn_button .underline{
+  position: absolute;
+  bottom:0%;
+  left:0;
+  background:white;
+  width:0%;
+  transition: all .2s;
+  height:2px;
+}
+
+.risks_learn_button:hover .underline{
+  width:100%;
+}

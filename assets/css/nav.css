@@ -1,0 +1,102 @@
+
+.link_box{
+  margin-left:10%;
+  float: left;
+  margin-top:20px;
+  font-size:20px;
+}
+
+.divider_box{
+  margin-right:35%;
+  float: left;
+  padding: 5px;
+}
+
+.link_box a {
+  text-decoration: none;
+  color:white;
+  transition: all .3s;
+}
+
+.join_banner{
+  position: fixed;
+  width:100%;
+  color:white;
+  font-size:16px;
+  top:0%;
+  text-align: center;
+  padding:10px;
+  font-size:25px;
+  left:0%;
+  background:rgba(4, 13, 43, 1);
+  z-index:11;
+}
+
+.join_banner_leave{
+  z-index: 0;
+  transform:translateY(-1000px);
+  transition: all 1s;
+}
+
+.link_box:hover a {
+  color:#00DAFF
+}
+
+.link_nav_title{
+  font-size:30px;
+  text-transform: uppercase;
+  font-weight:500;
+  text-align: left;
+}
+
+.link_box--title{
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+
+nav{
+  padding:0px;
+  font-weight: 200;
+  z-index:11;
+  left:0%;
+  top:0%;
+  position: absolute;
+  padding-top: 5px;
+  width:100%;
+  color:white;
+  overflow: hidden;
+  /* box-shadow:0px 0px 20px rgba(255,255,255,.5); */
+  font-family: "Inter Tight";
+  /* background:rgba(0,0,0,.25); */
+  font-size:20px;
+}
+
+#logo_box{
+  z-index:11;
+  position: absolute;
+  width:100% !important;
+  top:10%;
+}
+
+.logo_box--image{
+  width:25%;
+  margin-left:37.5%;
+  /* filter:brightness(0); */
+  position: relative;
+  bottom:20px;
+  opacity:1;
+  animation:logo_into 2s ease-in 1;
+}
+
+
+
+
+#company_name{
+  font-size:45px;
+  margin-top:-2.5%;
+  left:-10%;
+  animation:logo_into 2s ease-in 1;
+  width:100%;
+  font-weight: 200;
+  text-align: center;
+}

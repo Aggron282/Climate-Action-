@@ -1,0 +1,32 @@
+@media  screen and (max-width:400px){
+  .mission_container .subtitle{
+    font-size: 22px !important;
+  }
+
+  .mission_container{
+    position: relative;
+    z-index: 999;
+    padding-bottom: 40px;
+    margin-top: -85%;
+  }
+
+}
+
+.mission_container .title{
+  text-align: center !important;
+  font-size: 40px !important;
+  font-weight: 100 !important;
+}
+
+.mission_container .subtitle{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.mission_container{
+  padding:20px;
+  background:linear-gradient(#315468,#57838f);
+  color:white;
+  font-family: "Kanit";
+}

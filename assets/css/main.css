@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+
+body{
+  padding:0;
+  margin:0;
+  font-family: "Inter Tight";
+}
+
+
+.inactive{
+  visibility: hidden;
+  opacity:0;
+}
+
+.relative{
+  position: relative;
+}
+
+a {
+  color:white !important;
+    text-decoration: none !important;
+}
+a:hover{
+  color:black !important;
+}

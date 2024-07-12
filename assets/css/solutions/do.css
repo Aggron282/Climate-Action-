@@ -1,0 +1,32 @@
+.what_can_do_container{
+  background:linear-gradient(rgba(87,131,143,1),rgba(4, 13, 43, 1)), url("./../../imgs/flood--1.png");
+  padding: 2.5%;
+  overflow: hidden;
+}
+
+.what_can_do_row{
+  width:100%;
+  margin-top:5%;
+}
+
+.what_can_do_row .description{
+  float: right;
+  width:50%;
+  color:white;
+  font-size:20px;
+}
+
+.what_can_do_row .banner{
+  clear: both;
+  text-align: center;
+  font-weight: 500;
+  display: inline;
+  width:40%;
+  background:rgba(87,131,143,1);
+  padding:30px;
+  padding-left:35px;
+  padding-right:35px;
+  float: left;
+  color:rgba(4, 13, 43, 1);
+  font-size:50px;
+}

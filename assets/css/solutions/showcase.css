@@ -1,0 +1,38 @@
+.solutions_container{
+  height:120vh;
+  color:white;
+  padding:5%;
+  background:linear-gradient(180deg, #2E87BB 0%, rgba(46, 135, 187, .6) 52%, rgba(87,131,143,.6) 70% ,rgba(87,131,143,1) 100%), url("https://www.sunrisemovement.org/wp-content/uploads/2023/06/GND4Communities_Header-2048x829.jpg");
+}
+
+.solutions_container .text_box{
+  margin-top:15%;
+  float: left;
+  width:50%;
+}
+
+.solutions_container .text_box .title{
+  font-size:60px;
+  text-align: left;
+  font-weight:500;
+  margin-top: -1%;
+  line-height:1.5;
+  letter-spacing: 2px;
+}
+
+ .solutions_container .text_box .subtitle{
+  font-size:20px;
+  font-weight:300;
+  line-height:0;
+  letter-spacing: 3px;
+}
+
+.solutions_container .description{
+  margin-top:25%;
+  float: left;
+  margin-left: 5%;
+  width:40%;
+  text-align: justify;
+  font-size:20px;
+  font-weight:300;
+}

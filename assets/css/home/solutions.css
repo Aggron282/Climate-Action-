@@ -1,0 +1,86 @@
+@media  screen and (max-width:400px){
+
+  .solution_choice_container {
+    height: 60vh !important;
+    margin-top:5% !important;
+    width:100% !important;
+  }
+
+  .solutions_intro_container .title{
+    margin-left: 5% !important;
+    width: 90% !important;
+    text-align: center  !important;
+    font-size: 35px !important;
+    font-weight: 100 !important;
+  }
+
+  .solution_choice_container button{
+    position: relative !important;
+    margin-top:12.5% !important;
+  }
+
+}
+
+.solution_inner_container{
+  overflow: hidden;
+  padding:20px;
+  margin-top:-1%;
+  position: relative;
+}
+
+.solutions_intro_container .title{
+  color: white;
+  text-align: center;
+  font-size:60px;
+  font-weight: 100;
+  font-family: "Kanit";
+}
+
+.solution_choice_container{
+  opacity:1;
+  position: relative;
+  width:32%;
+  height:80vh;
+  box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+  margin-left:1%;
+  float:left;
+  border-top:1px solid black;
+  background:white;
+  padding-bottom:5%;
+}
+
+.solution_choice_container button {
+  background:black;
+  color:white;
+  width:50%;
+  bottom:5%;
+  position: absolute;
+  margin-left:25%;
+  padding:10px;
+  font-weight:200;
+  border-radius:5px;
+  border:none;
+  letter-spacing: 2px;
+  font-family: "Kanit";
+  font-size:17px;
+}
+
+.solution_choice_container p {
+  color:black;
+  text-align: center;
+  padding-top:20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Inter Tight";
+  font-size:22px;
+}
+
+.solution_choice_container img{
+  width:100%;
+  height:300px;
+  clear: both;
+  float:left;
+  margin-bottom:5%;
+  object-fit:cover
+}

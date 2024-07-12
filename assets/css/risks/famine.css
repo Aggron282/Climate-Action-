@@ -1,0 +1,74 @@
+.risks_famine_container .images_container{
+  float: right;
+  width:30%;
+}
+
+.risks_famine_container{
+  overflow: hidden;
+  padding:0%;
+}
+
+.risks_floods_container{
+  overflow: hidden;
+  padding:0%;
+  position: relative;
+}
+
+.risks_famine_container .images_container img {
+  width:100%;
+  object-fit: contain;
+  background-size: cover;
+}
+
+.risks_famine_container .text_box {
+  padding:5%;
+  width:60%;
+  float:left;
+}
+
+.risks_floods_container .text_box {
+  padding:5%;
+  width:60%;
+  float:left;
+}
+
+.risks_famine_container .text_box .title{
+  font-size:35px
+}
+
+.risks_floods_container .text_box .title{
+  font-size:35px
+}
+
+.risks_floods_container .images_container{
+  width:50%;
+  float: right;
+}
+
+.risks_floods_container .images_container .img--1{
+  width:300px;
+  height:300px;
+  top:15%;
+  left:70%;
+  position: absolute;
+}
+
+.img{
+  border:10px solid black;
+}
+
+.risks_floods_container .images_container .img--2{
+  width:200px;
+  height:200px;
+  top:20%;
+  left:60%;
+  position: absolute;
+}
+
+.risks_floods_container .text_box .description{
+  font-size:20px
+}
+
+.risks_famine_container .text_box .description{
+  font-size:20px
+}

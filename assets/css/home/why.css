@@ -1,0 +1,90 @@
+@media screen and (max-width:400px){
+
+    .why_intro_container .subtitle{
+      font-size:20px !important;
+      font-weight: 300 !important;
+    }
+
+    .why_fixed_background{
+      background-size:cover;
+      background-position: center !important;
+      background-image: linear-gradient( rgba(0,0,0, .8), rgba(0, 0, 0, .5)), url("../../imgs/99.png") !important;
+
+    }
+
+    .why_intro_container .description{
+      line-height: 1.5 !important;
+      text-align: justify !important;
+      width:90%;
+      margin-left:5%;
+    }
+
+    .why_intro_container .title{
+      text-align: center;
+      font-size: 50px !important;
+      font-weight: 100 !important;
+      font-family: "Kanit";
+    }
+
+    .why_intro_container{
+      padding: 0 !important;
+      padding-bottom: 90px !important;
+    }
+
+}
+
+.why_intro_container .title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Kanit";
+}
+
+.why_intro_container .subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: -2.5%;
+  font-family: "Kanit";
+}
+
+.why_intro_container .description{
+  text-align: center;
+  font-size: 17px;
+  margin-top: -2.5%;
+  font-family: "Inter Tight";
+}
+
+.why_intro_container button {
+   width:50%;
+   margin-top: 2.5%;
+   margin-left:25%;
+   padding:10px;
+   background:black;
+   color:white;
+   border-width:0px;
+   font-family: "Kanit";
+   font-size:16px;
+}
+
+.why_intro_container{
+  padding:20px;
+  position: relative;
+  background-position:bottom;
+}
+
+.why_fixed_background{
+  z-index:-1;
+  height:130vh;
+  top:0%;
+  width:100%;
+  left:0%;
+  position: fixed;
+  object-fit: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0, .65),rgba(0,0,0, .65)), url("../../imgs/99.png");
+}
+
+.why_intro_container p {
+  color:white;
+}
