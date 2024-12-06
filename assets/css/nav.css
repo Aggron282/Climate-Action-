@@ -4,6 +4,47 @@
   float: left;
   margin-top:20px;
   font-size:20px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,.2);
+  border-radius:50px;
+  padding:10px;
+  transition: all .3s;
+  position: relative;
+  z-index:9;
+
+}
+
+@keyframes hover_link{
+  0%{
+    transform:scale(1);
+    opacity:1;
+
+
+  }
+  50%{
+    background:white;
+    transform: scale(1.5);
+    opacity:.2;
+  }
+  100%{
+    opacity:0;
+    transform: scale(1.5);
+    background:white;
+  }
+}
+.link_box:hover::after{
+  animation:hover_link .3s ease-in 1;
+}
+
+.link_box::after{
+  background: none;
+  box-shadow: 0px 0px 0px rgba(0,0,0,.2);
+  position:  absolute;
+  border-radius:50px;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  content:""
 }
 
 .divider_box{
@@ -15,7 +56,20 @@
 .link_box a {
   text-decoration: none;
   color:white;
+}
+
+.link_box--title a {
+  text-decoration: none;
+  color:white;
   transition: all .3s;
+}
+
+.link_box--title{
+  margin-left:10%;
+  float: left;
+  margin-top:20px;
+  font-size:20px;
+  border-radius:50px;
 }
 
 .join_banner{
@@ -38,8 +92,14 @@
   transition: all 1s;
 }
 
-.link_box:hover a {
-  color:#00DAFF
+.link_box:hover {
+  transform: translateY(-2px);
+  background:white;
+  box-shadow: 0px -10px 20px rgba(0,0,0,.2) !important;
+}
+
+.link_box:hover a{
+  color:black !important;
 }
 
 .link_nav_title{
@@ -64,10 +124,8 @@ nav{
   padding-top: 5px;
   width:100%;
   color:white;
-  overflow: hidden;
-  /* box-shadow:0px 0px 20px rgba(255,255,255,.5); */
+  overflow: visible;
   font-family: "Inter Tight";
-  /* background:rgba(0,0,0,.25); */
   font-size:20px;
 }
 
@@ -81,15 +139,11 @@ nav{
 .logo_box--image{
   width:25%;
   margin-left:37.5%;
-  /* filter:brightness(0); */
   position: relative;
   bottom:20px;
   opacity:1;
   animation:logo_into 2s ease-in 1;
 }
-
-
-
 
 #company_name{
   font-size:45px;

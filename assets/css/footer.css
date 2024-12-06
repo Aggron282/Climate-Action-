@@ -36,10 +36,10 @@ footer .add_links_col ul li {
   font-size:15px;
 
 }
-a:hover {
+/* a:hover {
   font-weight: bold;
   color:white !important;
-}
+} */
 .add_links_col{
   float:left;
   width:30%;

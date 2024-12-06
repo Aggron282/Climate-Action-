@@ -1,12 +1,12 @@
 *{
   box-sizing: border-box;
   word-wrap: break-word;
+  margin:0;
+  padding:0;
 }
 
 
 body{
-  padding:0;
-  margin:0;
   font-family: "Inter Tight";
 }
 
@@ -22,8 +22,10 @@ body{
 
 a {
   color:white !important;
-    text-decoration: none !important;
+  text-decoration: none !important;
+
 }
-a:hover{
-  color:black !important;
-}
+
+/* a:hover{
+  color:black;
+} */
