@@ -1,0 +1,88 @@
+html,body{
+  width:100%;height:100%;
+  overflow-x: hidden;
+}
+.risk_slide_icon{
+  width:50%;
+  left:25%;
+  opacity:.2;
+  top:20%;
+  position:absolute;
+}
+.title--soft{
+  color:white;
+  opacity:.2;
+  position:absolute;
+  left:0;
+  top:10%;
+  width:100%;
+  font-size:45px;
+  text-align: center;
+  text-decoration: italic !important;
+  font-weight:300;
+  text-transform: capitalize;
+  font-family: "Nunito Sans" !important;
+}
+.risks_slideshow--visual{
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  width:55%;
+  height:100%;
+  z-index:999;
+  position: relative;
+}
+.risks_slideshow--visual img{
+  height:100vh;
+  background-position: center;
+  transform: scaleX(-1.2);
+}
+.risks_slideshow--text{
+clip-path: polygon(35% 0, 100% 0%, 100% 100%, 18% 100%);
+  z-index:9;
+  width:72.5%;
+  text-align: justify;
+  height:99%;
+  background:white;
+  position: absolute;
+  top:0%;
+  right:0%;
+
+}
+
+.in_transition--left{
+  animation:in_left .75s ease-in 1;
+  transform:translateX(0px);
+}
+
+.away_transition--right{
+  animation:away_right .5s ease-in 1 !important;
+    opacity:0;
+  transform:translateX(800px);
+}
+
+.away_transition--left{
+  animation:away_left .5s ease-in 1;
+  opacity:0;
+  transform:translateX(-800px);
+}
+
+.in_transition--right{
+  animation:in_right .75s ease-in 1;
+  transform:translateX(0px);
+}
+
+
+.risks_intro_container{
+  width:100%;
+  background:linear-gradient(to bottom,#57838f,#315468);
+  position:relative;
+  height:100vh;
+  padding-bottom:5%;
+
+  z-index: 999;
+  border-bottom:1px solid #57838f;
+}
+
+.risks_slideshow{
+  position:relative;
+
+}

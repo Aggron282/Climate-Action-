@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <title></title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,wght@1,600&family=Work+Sans:ital,wght@1,900&display=swap" rel="stylesheet">      <nav id = "navbar">
+
+        <link rel = "stylesheet" type="text/css" href = "./assets/css/animations.css">
     <link rel = "stylesheet" type="text/css" href = "./assets/css/main.css">
     <link rel = "stylesheet" type="text/css" href = "./assets/css/nav.css">
     <link rel = "stylesheet" type="text/css" href = "./assets/css/home/showcase.css">
 
     <link rel = "stylesheet" type="text/css" href = "./assets/css/home/mission.css">
     <link rel = "stylesheet" type="text/css" href = "./assets/css/home/solutions.css">
-    <link rel = "stylesheet" type="text/css" href = "./assets/css/home/risks.css">
+
     <link rel = "stylesheet" type="text/css" href = "./assets/css/home/why.css">
-    <link rel = "stylesheet" type="text/css" href = "./assets/css/animations.css">
+
     <link rel = "stylesheet" type="text/css" href = "./assets/css/footer.css">
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/home/new_risks.css">
 
     <meta name="author" content="Marco Khodr MacEwen">
     <meta name="keywords" content="climate-change climate climate-disaster global warming habitat-loss">
@@ -23,7 +26,6 @@
 
     <!-- only used google fonts thats it Roboto and Kanit with its respective font weights -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,wght@1,600&family=Work+Sans:ital,wght@1,900&display=swap" rel="stylesheet">      <nav id = "navbar">
 
 </head>
 <body>
@@ -88,8 +90,10 @@
 
           </div>
 
-          <div class="mission_container">
-
+          <div class="mission_container" >
+            <video class="mission_vid" muted autoplay >
+              <source src = "./assets/imgs/mission.mp4"></source>
+            </video>
             <p class="title mission_title">
               Our Mission
             </p>
@@ -105,42 +109,28 @@
 
             <p class="title mission_title"> The Why</p>
             <p class="subtitle mission_subtitle"> Learn What is Causing Climate Change</p>
-
+            <p class="description mission_description"> The reasons are deeper than you think!</p>
             <a href = "./why.html"><button class="why_intro_learn why_btn btn_ani"><p>Learn More</p></button></a>
 
           </div>
 
           <div class="risks_intro_container relative">
-
-            <div class="risks_text_box">
-
-                <p class="risks_title">Know The Risks</p>
-                <p class="risks_subtitle">The more you know the more you can help!</p>
-
-                <p class="risks_description">
-
-                  Climate change is changing water availability, making it scarcer in more regions. Global warming exacerbates water shortages in already water-stressed regions and is leading to an increased risk of agricultural droughts affecting crops, and ecological droughts increasing the vulnerability of ecosystems. Droughts can also stir destructive sand and dust storms that can move billions of tons of sand across continents. Deserts are expanding, reducing land for growing food. Many people now face the threat of not having enough water on a regular basis.
-
-                  The ocean soaks up most of the heat from global warming. The rate at which the ocean is warming strongly increased over the past two decades, across all depths of the ocean. As the ocean warms, its volume increases since water expands as it gets warmer. Melting ice sheets also cause sea levels to rise, threatening coastal and island communities. In addition, the ocean absorbs carbon dioxide, keeping it from the atmosphere. But more carbon dioxide makes the ocean more acidic, which endangers marine life and coral reefs.
-
-                </p>
-
-                <a href = "./risks.html">
-                  <button class="risks_learn_button">
-                    Learn More...
-                    <span class="underline"></span>
-                </button>
-               </a>
+              <p class="title--soft"> Know the Risks</p>
+              <img src = "./assets/imgs/risk_icon_slide.png"  class="risk_slide_icon"/>
+            <div class="risks_slideshow">
+              <div class="risks_slideshow--visual">
+                  <div class="visual_slide--1">
+                    <img srcset="./assets/imgs/bear.png 1x, ./assets/imgs/bear.png 2x  " src "./assets/imgs/bear.png" />
+                  </div>
+              </div>
+              <div class="risks_slideshow--text">
+                  <div class="text_slide--1">
+                  <p class="title"> The More You Know</p>
+                  <p>  Climate change is changing water availability, making it scarcer in more regions. Global warming exacerbates water shortages in already water-stressed regions and is leading to an increased risk of agricultural droughts affecting crops, and ecological droughts increasing the vulnerability of ecosystems. Droughts can also stir destructive sand and dust storms that can move billions of tons of sand across continents. Deserts are expanding, reducing land for growing food. Many people now face the threat of not having enough water on a regular basis.</p>
+                </div>
+              </div>
 
             </div>
-
-            <div class="risks_gallery_box">
-                <img class='gallery--1' src = "assets/imgs/flood--1.png"/>
-                <img class='gallery--2' src = "assets/imgs/flood--2.png"/>
-                <img class='gallery--4' src = "assets/imgs/fire--1.png"/>
-                <img class='gallery--5' src = "assets/imgs/melt--1.png"/>
-            </div>
-
           </div>
 
           <div class="solutions_intro_container">
@@ -202,6 +192,7 @@
       <script src = "./assets/js/form.js"></script>
       <script src = "./assets/js/animate_on_scroll.js"></script>
       <script src = "./assets/js/home_scroll_animation.js"></script>
+      <script src = "./assets/js/risks_slideshow.js"></script>
 
   </body>
 

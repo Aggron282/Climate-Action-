@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 @media screen and (max-width:400px){
 
     .why_intro_container .subtitle{
@@ -34,22 +37,23 @@
 
 .why_intro_container .title {
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 900;
   font-family: "Kanit";
+  margin-top:10px;
 }
 
 .why_intro_container .subtitle {
   text-align: center;
   font-weight: 700;
-  font-size: 60px;
-  margin-top: -2.5%;
+  font-size: 40px;
+  margin-top: .5%;
   font-family: "Kanit";
 }
 
 .why_btn {
    width:50%;
-   margin-top: -2.5%;
+   margin-top: 5%;
    margin-left:25%;
    padding:5px;
    background:none;
@@ -122,17 +126,21 @@
   padding:20px;
   position: relative;
   background-position:bottom;
-  padding-bottom: 50px;
+  padding-bottom: 10%;
+  padding-top:5%;
 }
 
 .why_fixed_background{
   z-index:-1;
-  height:130vh;
+  height:100%;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0,0,0);
   top:0%;
+
   width:100%;
   left:0%;
   position: fixed;
-  object-fit: cover;
+  object-fit: fill;
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0, .65),rgba(0,0,0, .65)), url("../../imgs/99.png");
 }
