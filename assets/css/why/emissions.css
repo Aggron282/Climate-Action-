@@ -1,92 +1,156 @@
-@media screen and (max-width:400px){
-  .emission_image--2{
-    visibility: hidden;
-  }
-
-  .emission_image--3{
-    visibility: hidden;
-  }
-
-  .emission_container .title{
-    text-align: center;
-    font-size:40px;
-  }
-
-  .emission_container .images_container{
-    width: 50%;
-    float: right;
-  }
-
-  .emission_image--1 {
-    position: relative;
-    width: 119%;
-  }
-
-  .emission_container .text_box{
-    width:90%;
-  }
-
-}
-
-.emission_container{
-  padding:10px;
-  background:  linear-gradient(rgba(30,79,88,1),rgb(30,79,88,1), rgb(87,131,143,1)),url("../../imgs/why_showcase.png");
-  color:white;
-  overflow: hidden;
-  position: relative;
-
-}
-
-.emission_container .images_container{
-  width:40%;
-  float: right;
-}
-
-.emission_image{
+#emit_canvas{
+  background:none;
+  width:100%;
+  height:800px;
   position: absolute;
-  width:20%;
-  padding: 0px;
-  border:black 10px solid;
+  top:0%;
+  left:0;
 }
 
-.emission_image img{
+.emit_container .text-container{
   width:100%;
-  padding: 0px;
+  position: relative;
+  z-index: 99;
+  animation:fact_appear 1s ease-in 1;
+  text-align: center;
+  padding-bottom:0%;
+  margin-top:-0px;
+
 }
 
-.emission_image--1{
-  width:25%;
-  top:55%;
-  z-index: 11;
-  right:20%;
+
+.emit_container  .title{
+  font-size:70px;
+  font-weight: 600;
+  padding-bottom:5px;
+  opacity:1;
+  margin-top:-0px;
+  text-align: center;
+
+}
+.toggler{
+    width:50%;
+    margin-left:45%;
+    padding-bottom:20%;
+    overflow: hidden;
+    z-index:9999;
+    position: relative;
+    margin-top:2.5%;
 }
 
-.emission_image--1 img{
-  width:100%;
-}
+.toggle-fact:hover{
+  opacity:.3;
 
-.emission_image--2{
-  width:25%;
-  top:25%;
-  z-index: 9;
-  right:10%;
 }
-
-.emission_image--3{
-  width:20%;
-  top:10%;
-  right:25%;
-}
-
-.emission_container .text_box{
-  width:40%;
+.toggle-fact{
+  width:20px;
+  transition: all .5s;
+  height:20px;
   float:left;
-  font-size:18px;
-  line-height:2;
+  margin-left:5px;
+  position: relative;
+  z-index:9999;
+  border-radius:50%;
+  background:white;
+  opacity:.1;
 }
 
-.emission_container .title{
-  font-size: 32.5px;
-  margin-left:2.5%;
-  font-weight:200;
+.toggle-fact--active{
+  background:white;
+  opacity:.5;
+}
+
+.emit_parent {
+  position: relative;
+}
+
+.emit_canvas{
+  background:none !important;
+}
+.emit_container .text-container .subtitle{
+  font-size:40px;
+  margin-top:50px;
+  font-weight:300;
+}
+
+.emit_container .text-container .description{
+  font-size:25px;
+  width:75%;
+  margin-left:10%;
+}
+
+.emit_container{
+  width:100%;
+  position: relative;
+  padding-top:5%;
+  transition: all 1s;
+  /* background:#a27705; */
+}
+
+.emit_container .text-container--fact--dis{
+  animation:fact_disappear 1 ease-in 1;
+  opacity:0;
+}
+
+@keyframes fact_appear{
+  0%{
+    opacity:0%;
+    transform:scale(0)
+  }
+  50%{
+
+      opacity:100%;
+      transform:scale(1.3)
+
+  }
+  70%{
+    opacity:100%;
+    transform:scale(1.3)
+  }
+  100%{
+    opacity:100%;
+    transform:scale(1)
+  }
+}
+@keyframes fact_disappear{
+  0%{
+    opacity:0%;
+    transform:scale(0)
+  }
+  50%{
+
+      opacity:100%;
+      transform:scale(1.3)
+
+  }
+  70%{
+    opacity:100%;
+    transform:scale(1.3)
+  }
+  100%{
+    opacity:100%;
+    transform:scale(1)
+  }
+}
+/* c64343;  #162360;  */
+
+.emit_container .graphic{
+  width:100%;
+  position: absolute;
+  bottom:0%;
+  z-index: 9;
+}
+
+.emit_parent{
+  transition: all .5s;
+}
+
+.emit_container .text-container .icon{
+  width:20%;
+  margin-left:25%;
+}
+
+.emit_container .text-container p{
+  color:white;
+  font-family: "Kanit";
 }

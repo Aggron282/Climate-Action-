@@ -1,0 +1,103 @@
+.why_oceans_rise_container{
+  background:linear-gradient(to right bottom, #fcc90d,#f88b16,#b00e19,#ee4c1c,#dc2c1d);
+}
+
+body{
+  overflow-x:hidden;
+}
+
+
+.rain_container{
+  background:teal;
+  background:#000f2b;
+  padding:100px;
+  padding-top:30px;
+  position: relative;
+}
+
+.tc{
+  text-align: center;
+}
+.rain_container .title{
+  text-align: center;
+  font-size: 50px;
+  margin-top:20px;
+  font-weight:600;
+}
+
+.rain_container div,p,img {
+  z-index: 99;
+  color:#c8d1de;
+  position: relative;
+}
+
+.reason_box .text-container p {
+  color:black;
+
+}
+#rain_canvas{
+  position: absolute;
+  width:100%;
+  height:1200px;
+  left:0%;
+  top:0;
+  background:black;
+  background:#000f2b;
+
+  z-index: 0;
+}
+
+.reason_box .text-container .title{
+  font-size: 50px;
+  text-align: left;
+  margin-top:0px;
+
+  font-weight:600;
+
+}
+
+.reason_box .text-container .description{
+  margin-top:10px;
+}
+
+.rain_container .subtitle{
+  font-size: 25px;
+  text-align: center;
+  margin-top:20px;
+}
+
+.reason_box{
+  width:100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 10% 80%;
+  padding:20px;
+  margin-top:50px;
+  background:#c8d1de;
+  overflow: hidden;
+  box-shadow:0px 0px 10px rgba(255,255,255,.5);
+}
+
+.reason_box .img-container{
+  width:30%;
+  grid-column:1 / 1;
+  grid-row:1 / 1;
+}
+
+.reason_box .text-container{
+  width:100%;
+  color:black;
+  padding:5px;
+  grid-column:2 / -1;
+}
+
+.reason_img{
+  width:100px;
+  float:left;
+}
+
+.reason_box .text-container .title{
+
+  font-size:30px;
+
+}

@@ -1,5 +1,5 @@
 var config  = [
-  
+
   {
     name: "Polar Bears",
     className:"polarbear",
@@ -64,9 +64,6 @@ var config  = [
 
 ];
 
-var bubbles = document.getElementsByClassName("animal_bubble");
-var content = document.querySelector(".detail_container");
-var container = document.querySelector(".habitat_loss_container");
 
 function RenderContent(name,description){
 
@@ -79,9 +76,11 @@ function RenderContent(name,description){
 
 }
 
-function PopulateContent(counter){
-
-  var chosen_data = config[counter];
+function PopulateContent(c){
+  var content = document.querySelector(".detail_container");
+  var container = document.querySelector(".habitat_loss_container");
+  var chosen_data = config[c];
+  var bubbles = document.getElementsByClassName("animal_bubble");
 
   content.innerHTML = "";
   content.innerHTML = RenderContent(chosen_data.name,chosen_data.description);
@@ -94,10 +93,11 @@ function PopulateContent(counter){
     container.classList.remove("habitat_loss--"+config[k].className);
   }
 
-  bubbles[counter].classList.add("bubble_active");
+  bubbles[c].classList.add("bubble_active");
   container.classList.add("habitat_loss--"+chosen_data.className);
 
 }
+var bubbles = document.getElementsByClassName("animal_bubble");
 
 for(var i = 0; i < bubbles.length; i ++){
 

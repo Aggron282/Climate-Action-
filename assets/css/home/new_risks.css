@@ -25,7 +25,7 @@ html,body{
 }
 .risks_slideshow--visual{
   clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-  width:55%;
+  width:50%;
   height:100%;
   z-index:999;
   position: relative;
@@ -38,7 +38,7 @@ html,body{
 .risks_slideshow--text{
 clip-path: polygon(35% 0, 100% 0%, 100% 100%, 18% 100%);
   z-index:9;
-  width:72.5%;
+  width:80%;
   text-align: justify;
   height:99%;
   background:white;
@@ -58,11 +58,93 @@ clip-path: polygon(35% 0, 100% 0%, 100% 100%, 18% 100%);
     opacity:0;
   transform:translateX(800px);
 }
+.text_slide--1{
+  background:linear-gradient(to top right, rgb(45, 49, 59), rgb(79, 135, 180), rgb(79, 130, 185))
+}
+.text_slide--2{
 
+  background:linear-gradient(to top left ,rgb(79, 135, 180),rgb(45, 49, 59))
+}
+
+.text_slide .title{
+  font-size:80px;
+  text-align: left;
+margin-left:35%;
+transform:skewX(-5deg);
+margin-top:1.5%;
+padding:50px;
+font-weight:600;
+
+}
+
+.text_slide .subtitle{
+  font-size:27px;
+  text-align: left;
+  margin-left:32.5%;
+  transform:skewX(-5deg);
+  padding:50px;
+  font-weight:400;
+  margin-top:-5%;
+  width:70%;
+
+}
+.text_slide .subtitle--2{
+  font-size:40px;
+font-weight:500;
+
+}
 .away_transition--left{
   animation:away_left .5s ease-in 1;
   opacity:0;
   transform:translateX(-800px);
+}
+.risk_slide_button{
+  width:50%;
+  margin-left:35%;
+  padding:10px;
+  background:white;
+  border:none;
+  border-radius:10px;
+  background: rgb(45, 49, 59);
+  font-weight:500;
+  color:white;
+  transition: .5s all;
+  font-family: "Nunito Sans";
+  font-size:30px;
+  position:relative;
+}
+.risk_slide_button::after{
+  position: absolute;
+  height:100%;
+  width:100%;
+  content: "";
+  left:0;
+  top:0;
+  box-shadow: 0px 0px 0px rgba(0,0,0,.2);
+  border-radius:50px;
+  opacity:1;
+  transition: all .4s;
+}
+.risk_slide_button:hover{
+  transform:translateY(-5px) scale(1.05);
+  background:white;
+  color:black;
+}
+.risk_slide_button:hover::after{
+  transform:scale(1.2);
+  opacity:0;
+  animation:grow_fast_btn .5s ease-in;
+}
+@keyframes grow_fast_btn{
+  0%{
+    transform:scale(1);
+    opacity:1;
+  }
+  100%{
+    transform:scale(1.2);
+    opacity:0;
+  }
+
 }
 
 .in_transition--right{

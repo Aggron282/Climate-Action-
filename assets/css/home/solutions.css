@@ -24,8 +24,9 @@
 .solution_inner_container{
   overflow: hidden;
   padding:20px;
-  margin-top:-1%;
+  margin-top:2.5%;
   position: relative;
+
 }
 
 .solutions_intro_container .title{
@@ -37,7 +38,6 @@
 }
 
 .solution_choice_container{
-  opacity:1;
   position: relative;
   width:32%;
   height:80vh;
@@ -64,11 +64,19 @@
   font-family: "Kanit";
   font-size:17px;
 }
-
+.s-btn{
+  transition:all 1s;
+}
+.s-btn:hover{
+background:#e6e6e6;color:black;
+}
 .solution_choice_container p {
   color:black;
   text-align: center;
+  padding:10px;
+
   padding-top:20px;
+
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
@@ -83,4 +91,88 @@
   float:left;
   margin-bottom:5%;
   object-fit:cover
+}
+
+@keyframes solution_1{
+  0%{
+    opacity:0;
+    transform: translateY(300px);
+  }
+  50%{
+    opacity:0;
+    transform: translateY(300px);
+  }
+  70%{
+    opacity:1;
+    transform: translateY(-20px);
+  }
+  100%
+  {
+    opacity:1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes solution_2{
+  0%{
+    opacity:0;
+    transform: translateY(300px);
+  }
+  60%{
+    opacity:0;
+    transform: translateY(300px);
+  }
+  70%{
+    opacity:1;
+    transform: translateY(-20px);
+  }
+  100%
+  {
+    opacity:1;
+    transform: translateY(0px);
+  }
+}
+
+
+@keyframes solution_3{
+  0%{
+    opacity:0;
+    transform: translateY(300px);
+  }
+  70%{
+    opacity:0;
+    transform: translateY(300px);
+  }
+  80%{
+    opacity:1;
+    transform: translateY(-20px);
+  }
+  100%
+  {
+    opacity:1;
+    transform: translateY(0px);
+  }
+}
+
+.solutions_intro_container  .solution_inner_container .solution_choice_container{
+  opacity:0;
+  transform:translateY(300px);
+}
+
+.solutions_intro_container--active .solution_inner_container .solution_choice_container--1{
+  opacity:1;
+  animation:solution_1 ease-in 1s 1;
+  transform:translateY(0px);
+}
+
+.solutions_intro_container--active  .solution_inner_container .solution_choice_container--2{
+  opacity:1;
+  animation:solution_2 ease-in 1.5s 1;
+  transform:translateY(0px);
+}
+
+.solutions_intro_container--active .solution_inner_container .solution_choice_container--3{
+  opacity:1;
+  animation:solution_3 ease-in 2s 1;
+  transform:translateY(0px);
 }

@@ -5,30 +5,41 @@ var config_risks_slideshow = [
   {
     right:`
     <div class="visual_slide--1">
-      <img srcset="./assets/imgs/bear.png 1x, ./assets/imgs/bear.png 2x  " src "./assets/imgs/bear.png" />
+      <img srcset="./assets/imgs/animals/coral.png 2x" src "./assets/imgs/animals/coral.png" />
     </div>
     `,
     left:
     `
-    <div class="text_slide--1">
-      <p class="title"> The More You Know</p>
-      <p>  Climate change is changing water availability, making it scarcer in more regions. Global warming exacerbates water shortages in already water-stressed regions and is leading to an increased risk of agricultural droughts affecting crops, and ecological droughts increasing the vulnerability of ecosystems. Droughts can also stir destructive sand and dust storms that can move billions of tons of sand across continents. Deserts are expanding, reducing land for growing food. Many people now face the threat of not having enough water on a regular basis.</p>
+    <div class="text_slide">
+      <p class="title"> The More You Know </p>
+      <p class="subtitle">
+         Climate change is changing water availability,
+         making it scarcer in more regions.
+         <br>Global warming exacerbates water shortages in
+         already water-stressed regions and is leading to an increased risk of agricultural droughts affecting crops
+       </p>
     </div>
-    `
+
+    `,
+    style:"text_slide--1"
   },
   {
     right:`
     <div class="visual_slide--2">
-      <img srcset="./assets/imgs/bear.png 1x, ./assets/imgs/bear.png 2x  " src "./assets/imgs/bear.png" />
+    <img srcset="./assets/imgs/animals/puffin.png 2x" src "./assets/imgs/animals/seaturtle.png" />
     </div>
     `,
     left:
     `
-    <div class="text_slide--1">
-      <p class="title"> The More You Know</p>
-      <p>  Climate change is changing water availability, making it scarcer in more regions. Global warming exacerbates water shortages in already water-stressed regions and is leading to an increased risk of agricultural droughts affecting crops, and ecological droughts increasing the vulnerability of ecosystems. Droughts can also stir destructive sand and dust storms that can move billions of tons of sand across continents. Deserts are expanding, reducing land for growing food. Many people now face the threat of not having enough water on a regular basis.</p>
+    <div class="text_slide">
+      <p class="title">You Can Save Us!</p>
+      <p class="subtitle subtitle--2">
+      Learn More Below to Find Out How!
+       </p>
+       <button class="risk_slide_button">Learn More</button>
     </div>
-    `
+    `,
+    style:"text_slide--2"
   }
 
 
@@ -41,7 +52,7 @@ function ToggleSlideShowRisks(){
 
   counter += 1;
 
-  if(counter > config_risks_slideshow.length - 2){
+  if(counter > config_risks_slideshow.length - 1){
     counter = 0;
   }
 
@@ -62,7 +73,10 @@ function ToggleSlideShowRisks(){
     text_container.classList.add("in_transition--right")
     visual_container.classList.remove("away_transition--left")
     text_container.classList.remove("away_transition--right")
-
+    for(var i =0; i < config_risks_slideshow.length; i++){
+      text_container.classList.remove(config_risks_slideshow[i].style)
+    }
+    text_container.classList.add(config_risks_slideshow[counter].style)
   },2000)
 
 
@@ -70,10 +84,11 @@ function ToggleSlideShowRisks(){
 
 function Init(){
   counter = 0;
-  visual_container.innerHTML = config_risks_slideshow[0].right;
-  text_container.innerHTML = config_risks_slideshow[0].left;
+  visual_container.innerHTML = config_risks_slideshow[1].right;
+  text_container.innerHTML = config_risks_slideshow[1].left;
   visual_container.classList.add("in_transition--left")
   text_container.classList.add("in_transition--right")
+  text_container.classList.add(config_risks_slideshow[1].style)
   console.log("S")
 }
 
