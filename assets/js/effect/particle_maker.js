@@ -9,10 +9,12 @@ const SHAPE = Object.freeze({
 });
 
 const BEHAVIOR = Object.freeze({
-  RISE: 1,
+  MOVE: 1,
+  FALL:2,
+  FALLSTATIC:22
 });
 
-class Effect {
+class Particle {
 
   constructor(size,color,img_src,velocity,force,x,y,type,ctx,behavior,canvas,animate,id){
     this.x = Math.random() * x;
@@ -23,13 +25,14 @@ class Effect {
     this.velocity = velocity;
     this.force = force;
     this.type = type;
+    this.behavior = behavior;
     this.ctx = ctx;
     this.canvas = canvas;
     this.dy = -1;
     this.dx = 1;
     this.id =id;
     this.animate = animate;
-    console.log(canvas)
+
 
   }
 
@@ -43,21 +46,30 @@ class Effect {
         var image = new Image(this.img_src)
         this.ctx.draw_image(image,this.x,this.y);
     }
-    else if(this.type = SHAPE.CIRCLE){
+    else if(this.type == SHAPE.CIRCLE){
         this.ctx.arc(this.x,this.y,this.size,0,Math.PI * 2);
         this.ctx.fill();
     }
-    else if(this.type = SHAPE.SQUARE){
+    else if(this.type == SHAPE.SQUARE){
         this.ctx.rect(this.size,this.size, this.x,this.y);
         this.ctx.stroke();
     }
-    else if(this.type = SHAPE.LINE_HORIZ){
-        this.ctx.moveTo(this.x + this.size,this.y);
-        this.ctx.stroke();
+    else if(this.type == SHAPE.LINE_HORIZ){
+      this.ctx.beginPath();
+      this.ctx.moveTo(this.x, this.y);
+      this.ctx.lineTo(this.x + this.length, this.y);
+      this.ctx.strokeStyle = this.color;
+      this.ctx.lineWidth = 1;
+      this.ctx.stroke();
     }
-    else if(this.type = SHAPE.LINE_VERT){
-        this.ctx.moveTo(this.y + this.size,this.y);
-        this.ctx.stroke();
+    else if(this.type == SHAPE.LINE_VERT){
+      this.ctx.beginPath();
+      this.ctx.moveTo(this.x, this.y);
+      this.ctx.lineTo(this.x, this.y + this.length);
+      this.ctx.strokeStyle = this.color;
+      this.ctx.lineWidth = 1;
+      this.ctx.stroke();
+      console.log(this);
     }
     else{
       this.ctx.arc(this.x,this.y,this.size,0,Math.PI * 2);
@@ -67,29 +79,53 @@ class Effect {
   }
 
   decide_behavior(){
-    this.move();
+
+   if(this.behavior == BEHAVIOR.FALLSTATIC){
+      this.fallStatic();
+    }else{
+      this.move();
+    }
+
+  }
+
+  fallStatic() {
+
+    this.y += this.velocity.y;
+    if (this.y > this.canvas.height) {
+        this.y = Math.random() * -this.canvas.height;
+        this.x = Math.random() * this.canvas.width;
+    }
+
   }
 
   move(){
 
     this.x +=  Math.abs( this.velocity.x) *  Math.random() * 2 *this.dx;
     this.y += Math.abs( this.velocity.y) * this.dy;
+
     var s = false
+
     if(s){
+
       if(this.y > this.canvas.height || this.y <= 0){
         this.dy *= -1;
       }
+
       if(this.x > this.canvas.width || this.x <= 0){
         this.dx *= -1;
       }
+
     }
 
   }
 
   draw(){
+
     this.ctx.fillStyle=this.color;
     this.ctx.strokeStyle=this.color;
+
     this.decide_shape();
+
   }
 
   animate(){
@@ -97,62 +133,8 @@ class Effect {
   }
 
   update(){
-    // this.ctx.fillStyle="rgba(0,0,0,.01)"
-    // this.ctx.fillRect(0,0,this.canvas.width,this.canvas.height)
-
-    this.draw();
+    this.draw()
     this.decide_behavior();
-
   }
 
 }
-
-function RiseInPollutionEffect(){
-  // Rise of Pollution Effect
-
-  var toxic = 5;
-  var toxic_canvas = document.querySelector("#toxic_canvas");
-  var tx = toxic_canvas.getContext("2d");
-  var toxic_particles = [];
-
-  function init(){
-
-    for(var i =0; i < toxic; i++){
-
-      var velocity = {x:Math.random() * - 1 + 1,y:Math.random() * 2 + 1};
-
-      var type = SHAPE.CIRCLE;
-      var behavior = BEHAVIOR.RISE;
-
-      var x = Math.random() * toxic_canvas.width;
-      var y = toxic_canvas.height;
-
-      var toxic_particle_ = new Effect(1,"rgba(0,0,0,.5)",null,velocity,0,x,y,type,tx,behavior,toxic_canvas,animate,i);
-
-      toxic_particles.push(toxic_particle_);
-
-    }
-
-  }
-
-  function animate(){
-    tx.clearRect(0,0,toxic_canvas.width,toxic_canvas.height)
-
-    requestAnimationFrame(animate);
-
-    for(var i =0; i < toxic_particles.length; i++){
-      toxic_particles[i].update();
-    }
-
-
-  }
-
-  setInterval(()=>{
-    init();
-  },1000)
-  animate();
-
-}
-
-
-RiseInPollutionEffect();

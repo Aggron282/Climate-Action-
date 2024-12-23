@@ -23,10 +23,13 @@ join_button.addEventListener("click",(e)=>{
 
 
 function JoinExec(){
+
   join_container.innerHTML = "";
   join_container.innerHTML = RenderJoinContent();
+
   setTimeout(()=>{
     var join_banner = document.querySelector(".join_banner");
     join_banner.classList.add("join_banner_leave");
   },1000);
+
 }
