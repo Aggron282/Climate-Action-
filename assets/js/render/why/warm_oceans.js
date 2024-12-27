@@ -10,7 +10,7 @@ function RenderWarmOceans(){
 
       <div class="bubble-container"></div>
 
-        <div class="text_slideshow_column">
+             <div class="text_slideshow_column">
           <div class="text-render--warm">
 
           </div>
@@ -23,7 +23,11 @@ function RenderWarmOceans(){
           </div>
 
         </div>
-        <div class="image_slideshow_column"></div>
+        <div class="image_slideshow_column">
+            <div class="img-render--warm">
+            </div>
+            <div class="lava lava--up parallax"></div>
+        </div>
 
       </div>
 
