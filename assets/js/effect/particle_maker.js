@@ -5,13 +5,15 @@ const SHAPE = Object.freeze({
   SQUARE: 1,
   LINE_HORIZ: 6,
   LINE_VERT: 3,
-  IMG:5
+  IMG:5,
+  SPHERE:22
 });
 
 const BEHAVIOR = Object.freeze({
   MOVE: 1,
   FALL:2,
-  FALLSTATIC:22
+  FALLSTATIC:22,
+
 });
 
 class Particle {
@@ -54,6 +56,20 @@ class Particle {
         this.ctx.rect(this.size,this.size, this.x,this.y);
         this.ctx.stroke();
     }
+    else if (this.type == SHAPE.SPHERE){
+
+      const gradient = ctx.createRadialGradient(this.x, this.y, this.size * 0.2, this.x, this.y, this.size);
+
+      gradient.addColorStop(0, "#ffffff");
+      gradient.addColorStop(0.1, this.color);
+      gradient.addColorStop(1, "#000000");
+
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+    }
     else if(this.type == SHAPE.LINE_HORIZ){
       this.ctx.beginPath();
       this.ctx.moveTo(this.x, this.y);
@@ -63,13 +79,12 @@ class Particle {
       this.ctx.stroke();
     }
     else if(this.type == SHAPE.LINE_VERT){
-      this.ctx.beginPath();
-      this.ctx.moveTo(this.x, this.y);
-      this.ctx.lineTo(this.x, this.y + this.length);
-      this.ctx.strokeStyle = this.color;
-      this.ctx.lineWidth = 1;
-      this.ctx.stroke();
-      console.log(this);
+          ctx.beginPath();
+          ctx.moveTo(this.x, this.y);
+          ctx.lineTo(this.x, this.y + this.size);
+          ctx.strokeStyle = this.color;
+          ctx.lineWidth = 1;
+          ctx.stroke();
     }
     else{
       this.ctx.arc(this.x,this.y,this.size,0,Math.PI * 2);
@@ -85,12 +100,12 @@ class Particle {
     }else{
       this.move();
     }
-
   }
 
   fallStatic() {
 
     this.y += this.velocity.y;
+    console.log(this.y,this.canvas)
     if (this.y > this.canvas.height) {
         this.y = Math.random() * -this.canvas.height;
         this.x = Math.random() * this.canvas.width;
@@ -100,29 +115,25 @@ class Particle {
 
   move(){
 
-    this.x +=  Math.abs( this.velocity.x) *  Math.random() * 2 *this.dx;
+    this.x +=  Math.abs( this.velocity.x) *  Math.random() * this.dx;
     this.y += Math.abs( this.velocity.y) * this.dy;
 
-    var s = false
-
-    if(s){
-
-      if(this.y > this.canvas.height || this.y <= 0){
-        this.dy *= -1;
-      }
-
-      if(this.x > this.canvas.width || this.x <= 0){
-        this.dx *= -1;
-      }
-
+    if(this.y > this.canvas.height || this.y <= 0){
+      this.dy *= -1;
     }
+
+    if(this.x > this.canvas.width || this.x <= 0){
+      this.dx *= -1;
+    }
+
+
 
   }
 
   draw(){
-
-    this.ctx.fillStyle=this.color;
-    this.ctx.strokeStyle=this.color;
+    console.log(this.ctx)
+    this.ctx.fillStyle= this.color;
+    this.ctx.strokeStyle = this.color;
 
     this.decide_shape();
 

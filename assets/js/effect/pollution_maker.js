@@ -17,7 +17,6 @@ function PollutionMaker(){
           const speedX = Math.random() * 1 - 0.5;
           const speedY = Math.random() * 1 - 0.5;
           const color = `rgba(10,10,10, 0.1)`;
-
           particles.push(new Particle(size,color,null,{x:speedX,y:speedY},1,x, y, SHAPE.CIRCLE, ctx, BEHAVIOR.MOVE, animate, "pollute"+numPollutes));
 
         }

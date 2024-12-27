@@ -1,5 +1,6 @@
 .why_oceans_rise_container{
-  background:linear-gradient(to right bottom, #fcc90d,#f88b16,#b00e19,#ee4c1c,#dc2c1d);
+  background: linear-gradient(to top left, rgb(79, 135, 180), rgb(45, 49, 59));
+
 }
 
 body{
@@ -42,8 +43,7 @@ body{
   left:0%;
   top:0;
   background:black;
-  background:#000f2b;
-
+background: linear-gradient(to top left, rgb(79, 135, 180), rgb(45, 49, 59));
   z-index: 0;
 }
 
