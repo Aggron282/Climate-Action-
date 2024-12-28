@@ -51,9 +51,14 @@
   padding-top:5px;
   position:relative;overflow:hidden;
   padding-bottom:20%;
-  background:linear-gradient(#315468,#57838f);
+  object-fit: cover;
+  background-size: cover;
+
+  background: linear-gradient(to  bottom,rgb(87,131,143,1), rgb(30,79,88,.9),rgb(30,79,88,.5)), url("./../../imgs/oooo.png");
   color:white;
   font-family: "Kanit";
+  background-size: cover;
+
 }
 
 .mission_title{
