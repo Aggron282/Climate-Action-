@@ -1,0 +1,102 @@
+.fact_grid{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 600px;
+  grid-gap: 20px;
+  padding:10px;
+  padding-left:0px;
+}
+.fact_section{
+  padding:20px;
+}
+
+.img_col{
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  background-size: cover;
+  background:linear-gradient(to  bottom,rgba(22,7,24,1),rgba(22,7,24,.5),rgb(79, 135, 180,0)),url("./../../imgs/ee.png");
+  border-radius: 10px;
+  padding:30px;
+
+  text-align: center;
+
+}
+.fact_col{
+  box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+  padding:30px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background:linear-gradient(to  bottom,rgba(22,7,24,.8),rgba(22,7,24,.8),rgba(79, 135, 180,.8))
+}
+
+.fact_box{
+  background:linear-gradient(to  bottom,rgba(22,7,24,1),rgba(22,7,24,.8),rgb(79, 135, 180,0)),url("./../../imgs/ee.png");
+  box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+  border-radius:10px;
+  padding:10px;
+  margin-top:30px;
+}
+
+
+.fact_col p{
+  margin-top:10px;
+}
+.fact_col .title{
+  font-weight:bold;
+
+}
+
+.fact_col {
+  overflow-y: scroll; /* Ensure the element scrolls vertically if content overflows */
+}
+
+.fact_col::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.fact_box .title{
+  width:50%;
+
+  font-size:18px !important;
+}
+.fact_col {
+   scrollbar-color: orangered #27294c ;
+  scrollbar-width: thin;
+}
+
+
+.divider{
+  margin-left:25%;
+  height:1px;
+  margin-top:15%;
+  background:lightblue;width:50%;
+}
+.fact_col .description{
+  font-weight:400;
+  font-size:16px;
+}
+
+.fact_col button{
+  width:50%;
+  background:rgba(217,121,74,.9);
+  font-family: "Kanit";
+  color:white;
+  padding:5px;
+  font-size:20px;
+  border-radius:5px;
+  border:2px solid rgba(22,7,24,1);
+  margin-top:50px;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+.img_col .title{
+  font-size: 70px;
+  font-weight: 600;
+  font-size:orangered;
+}
+
+
+.img_col .subtitle{
+  font-size: 20px;
+  font-weight: 600;
+  font-size:orangered;
+}

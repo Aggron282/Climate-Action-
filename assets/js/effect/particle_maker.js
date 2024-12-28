@@ -1,5 +1,3 @@
-
-
 const SHAPE = Object.freeze({
   CIRCLE: 2,
   SQUARE: 1,
@@ -12,13 +10,15 @@ const SHAPE = Object.freeze({
 const BEHAVIOR = Object.freeze({
   MOVE: 1,
   FALL:2,
+  MOVEANDCOLLIDE:33,
+  COLLIDE:3,
   FALLSTATIC:22,
 
 });
 
 class Particle {
 
-  constructor(size,color,img_src,velocity,force,x,y,type,ctx,behavior,canvas,animate,id){
+  constructor(size,color,img_src,velocity,force,x,y,type,ctx,behavior,canvas,animate,id,particles){
     this.x = Math.random() * x;
     this.y = y;
     this.size = Math.random() * size +2;
@@ -34,8 +34,10 @@ class Particle {
     this.dx = 1;
     this.id =id;
     this.animate = animate;
-
-
+    this.startX = x;
+    this.exploded = false;
+    this.startY = y;
+    this.particles = particles ? particles : [];
   }
 
   decide_shape = () =>{
@@ -97,19 +99,62 @@ class Particle {
 
    if(this.behavior == BEHAVIOR.FALLSTATIC){
       this.fallStatic();
-    }else{
+    }
+    else{
       this.move();
     }
+
   }
 
   fallStatic() {
 
     this.y += this.velocity.y;
-    console.log(this.y,this.canvas)
+
     if (this.y > this.canvas.height) {
         this.y = Math.random() * -this.canvas.height;
         this.x = Math.random() * this.canvas.width;
     }
+
+  }
+
+  explode() {
+      if(this.exploded){
+        return;
+      }
+      this.exploded = true;
+      for (let i = 0; i < 10; i++) {
+
+          const angle = Math.random() * Math.PI * 2;
+          const size = this.size / 2;
+          const v = {
+            x:Math.cos(angle) * this.velocity.x,
+            y:Math.sin(angle) * this.velocity.y
+          }
+
+          this.particles.push(
+
+            new Particle(
+              size,
+              this.color,
+              null,
+              v,
+              1,
+              this.x,
+              this.y,
+              this.type,
+              this.ctx,
+              BEHAVIOR.COLLIDE,
+              this.canvas,
+              this.animate,
+              this.id,
+              this.particles
+            ));
+
+
+
+        }
+
+        this.particles.splice(this.particles.indexOf(this), 1);
 
   }
 
@@ -119,19 +164,26 @@ class Particle {
     this.y += Math.abs( this.velocity.y) * this.dy;
 
     if(this.y > this.canvas.height || this.y <= 0){
-      this.dy *= -1;
+      if(BEHAVIOR.MOVEANDCOLLIDE){
+        this.explode();
+      }else{
+        this.dy *= -1;
+      }
     }
 
     if(this.x > this.canvas.width || this.x <= 0){
-      this.dx *= -1;
+
+      if(BEHAVIOR.MOVEANDCOLLIDE){
+        this.explode();
+      }else{
+        this.dx *= -1;
+      }
+
     }
-
-
 
   }
 
   draw(){
-    console.log(this.ctx)
     this.ctx.fillStyle= this.color;
     this.ctx.strokeStyle = this.color;
 

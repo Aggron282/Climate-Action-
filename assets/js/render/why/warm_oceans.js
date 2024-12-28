@@ -316,7 +316,6 @@ function Generate3DBubbles(){
     const scrollY = window.scrollY;
 
     document.querySelectorAll(".parallax").forEach(el => {
-      console.log(el.dataset.speed)
       const speed = parseFloat(el.dataset.speed);
       el.style.transform = `translateY(${scrollY / speed}px)`;
     });
