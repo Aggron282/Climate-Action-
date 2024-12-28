@@ -4,17 +4,18 @@ var habitat_bubble = document.querySelector(".why_bubble--habitat");
 var matters_bubble = document.querySelector(".why_bubble--matters");
 
 climate_bubble.addEventListener("click",(e)=>{
-  var el = document.querySelector(".why_oceans_slideshow");
+  var el = document.querySelector(".warm_ocean_section");
   Scroll(el);
 });
 
+
 habitat_bubble.addEventListener("click",(e)=>{
-  var el = document.querySelector(".habitat_loss_container");
+  var el = document.querySelector(".polluted_section");
   Scroll(el);
 });
 
 greed_bubble.addEventListener("click",(e)=>{
-  var el = document.querySelector(".emission_container");
+  var el = document.querySelector(".fact_section");
   Scroll(el);
 });
 

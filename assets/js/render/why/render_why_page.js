@@ -11,11 +11,11 @@ function RenderShocaseWhy(){
   </div>
 
   <div class="why_bubble why_bubble--2  why_bubble--habitat">
-      <p>Habitat Loss</p>
+    <p>The Reasons</p>
   </div>
 
   <div class="why_bubble why_bubble--3  why_bubble--greed">
-    <p>Corporate Greed</p>
+    <p>Did You Know?</p>
   </div>
 
   <div class="why_bubble why_bubble--4  why_bubble--matters">
@@ -318,8 +318,8 @@ function RenderEmitContainer(){
 }
 
 RenderShocaseWhy();
-RenderClimateWhy();
-RenderHabitatBubbles();
+// RenderClimateWhy();
+// RenderHabitatBubbles();
 RenderWhyItMatters();
-RenderEmitContainer();
-RenderClimateReasons();
+// RenderEmitContainer();
+// RenderClimateReasons();
