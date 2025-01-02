@@ -1,154 +1,114 @@
-.inner-container--pollution{
-    width:100%;
-    padding:10px;
-    background: black;
+.inner-container--pollution {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(22, 7, 24, 1), rgba(22, 7, 24, 0.4)), url("./../../imgs/p.png") no-repeat center top;
+    background-size: cover;
     position: relative;
-    height:100%;
-    background:linear-gradient(to right,rgba(22,7,24,1),rgba(22,7,24,.4)),url("./../../imgs/p.png");
-    background-size:cover;
-    background-position: top;
+    height: 100%;
 }
 
-.rain-container{
-  width:100%;
-  position: absolute;
-  height:100%;
-  left:0;
-  top:0;
+.rain-container {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
 
-.text-container--pollution{
-  width:60%;
-  float:left;
-  font-family: "Kanit";
-  color:white;
-  padding:10px;
+.text-container--pollution {
+    width: 60%;
+    float: left;
+    font-family: "Kanit", sans-serif;
+    color: white;
+    padding: 10px;
+    transform: translateX(-300px);
+    opacity: 0;
+    position: relative;
+    z-index: 99;
+    transition: transform 1.5s ease-in, opacity 1.5s ease-in;
 }
 
-.text-container--pollution .title{
-  font-size:50px;
-  font-weight:bold;
+.text-container--pollution--active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
-
-.text-container--pollution .description{
-  font-size:17px;
-  font-weight:300;
+.text-container--pollution .title {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-#rainCanvas{
-  width:100%;
-  position: absolute;
-  top:0;
-  left:0;
-  height:100%;
+.text-container--pollution .description {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
-.grid-container--pollution{
-  clear:both;
-  width:90%;
-  position: relative;
-  z-index: 99;
-  padding:30px;
-  display:grid;
-  grid-gap: 20px;
-  grid-template-rows: 250px 250px;
-  position: relative;
-  margin-left:2.5%;
-  grid-template-columns: repeat(4, 25%);
+#rainCanvas {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
-
-.text-container--pollution{
-  transform:translateX(-300px);
-  opacity:0;
-  position: relative;
-  z-index: 99;
+.grid-container--pollution {
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: relative;
+    z-index: 99;
 }
 
-.text-container--pollution--active{
-  transform:translateX(0px);
-  opacity:1;
-  animation:text-pollute 1.5s ease-in 1;
+.polluted_section .graphic-container {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    bottom: 50%;
+    left: 0;
+    z-index: 0;
 }
 
-.polluted_section .graphic-container{
-  width:100%;
-  z-index:0;
-  position: absolute;
-  opacity:0;
-  bottom:50%;
-  left:0%;
+.graphic-container img {
+    width: 100%;
 }
 
-.graphic-container img{
-  width:100%;
-}
-.resource_box .title{
-  font-weight: bold;
-}
-.resource_box{
-  background:rgba(22,7,24,1);
-  padding:30px;
-  transition: all .5s;
-  animation: 1s resource 1 ease-in;
-  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+.resource_box {
+    background: rgba(22, 7, 24, 1);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: resource 1s ease-in forwards;
 }
 
-@keyframes resource {
-  0%{
-    transform: scale(0);
-    opacity:0
-  }
-  50%{
-    transform: scale(1.1);
-  }
-  100%{
-    transform: scale(1);
-    opacity:1;
-  }
+.resource_box .title {
+    font-weight: bold;
 }
-.resource_box * {
-  margin-top:10px
+
+.resource_box .description {
+    font-size: 0.9rem;
 }
-.resource_box .description{
-  font-size:15px;
-}
+
 .resource_box button {
-  background:none;
-  border:none;
-  border-bottom:1px solid white;
-  color:white;
-  font-family: "Kanit";
-  font-size:16px;
-  transition: all .5s;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem;
+    transition: color 0.5s ease, border-color 0.5s ease;
+    cursor: pointer;
 }
 
 .resource_box button:hover {
-  color:orangered;
-  border-color:orangered;
+    color: orangered;
+    border-color: orangered;
 }
 
-@keyframes text-pollute{
-  0%{
-    transform: translateX(-1000px) scale(1);
-    color:black;
-    opacity:0;
-  }
-  50%{
-    transform: translateX(-1000px) scale(1);
-    color:black;
-    opacity:.3;
-  }
-  80%{
-    transform: translateX(20px) scale(1.1);
-    color:teal;
-    opacity:.8;
-  }
-  100%{
-    transform: translateX(0px) scale(1);
-    color:teal;
-    opacity:1
-
-  }
+.resource_box * {
+    margin-top: 10px;
 }

@@ -1,8 +1,7 @@
-@media  screen and (max-width:700px) and (orientation:portrait){
-
-  .showcase_video{
-    height:75% !important;
-    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)) !important;
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .showcase_video {
+    height: 75% !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) !important;
   }
 
   .join_us_container .description {
@@ -10,187 +9,178 @@
     font-size: 20px !important;
   }
 
-  .video_wrapper{
-    height:80% !important;
+  .video_wrapper {
+    height: 80% !important;
   }
 
-  #company_name{
-    font-size:25px !important;
+  #company_name {
+    font-size: 25px !important;
   }
 
-  #logo_box{
-    /* margin-left:20% !important; */
-    top:20% !important;
+  #logo_box {
+    top: 20% !important;
   }
 
-  .link_box{
+  .link_box {
     clear: both;
-    float:none !important;
-    margin-left:5% !important;
+    float: none !important;
+    margin-left: 5% !important;
   }
 
-  .join_us_container{
-    top:32.5% !important;
-    width:100% !important;
+  .join_us_container {
+    top: 32.5% !important;
+    width: 100% !important;
   }
 
-  .join_us_container input{
-    width:90% !important;
-
-    margin-left:5% !important;
+  .join_us_container input {
+    width: 90% !important;
+    margin-left: 5% !important;
   }
 
-  .waiver{
-    width:80% !important;
+  .waiver {
+    width: 80% !important;
     float: left;
     font-size: 15px !important;
     text-align: justify;
-    margin-left:5% !important;
+    margin-left: 5% !important;
   }
 
-  .checkbox_join{
-    float:right;
-    left:160px;
-    top:50px !important;
-    position:  relative !important;
-    width:5% !important;
+  .checkbox_join {
+    float: right;
+    left: 160px;
+    top: 50px !important;
+    position: relative !important;
+    width: 5% !important;
   }
 
-  .join_us_container button{
-    opacity:1 !important;
-    margin-top:10%;
+  .join_us_container button {
+    opacity: 1 !important;
+    margin-top: 10%;
     visibility: visible !important;
   }
-
 }
 
-.solutions_intro_container{
-  padding:20px;
-  padding-top:5%;
+.solutions_intro_container {
+  padding: 20px;
+  padding-top: 5%;
   overflow: hidden;
-  background:linear-gradient(#315468,#91b3c4);
+  background: linear-gradient(#315468, #91b3c4);
 }
 
-.showcase{
+.showcase {
   position: relative;
-  width:100%;
-  height:135vh;
-  padding:0%;
+  width: 100%;
+  height: 135vh;
+  padding: 0;
 }
 
-.video_wrapper{
-  height:100%;
-  width:100%;
+.video_wrapper {
+  height: 100%;
+  width: 100%;
   display: inline;
-  z-index:2;
-  background-image: linear-gradient(to right bottom,rgb(30,79,88,.1), rgb(87,131,143,.1));
-  position:  absolute;
-  top:0;
-  left:0;
-  padding:0%;
+  z-index: 2;
+  background-image: linear-gradient(to right bottom, rgba(30, 79, 88, 0.1), rgba(87, 131, 143, 0.1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
 }
 
-.join_us_container .title{
- text-align: center;
- font-weight: bold;
- display: inline-block;
- line-height: 1;
- font-family: "Inter Tight";
- font-size: 30px;
- letter-spacing: 1px;
+.join_us_container .title {
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1;
+  font-family: "Inter Tight";
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
-.join_us_container button{
-  width:50%;
-  padding:5px;
-  border:none;
-  margin-left:25%;
-  background: rgba(0,0,0,.5);
-  color:white;
+.join_us_container button {
+  width: 50%;
+  padding: 5px;
+  border: none;
+  margin-left: 25%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   display: inline-block;
   font-weight: 300;
-  font-family:  "Kanit" !important;
-  font-size:20px;
+  font-family: "Kanit" !important;
+  font-size: 20px;
 }
 
 .checkbox_join {
-  margin-top: 0%;
+  margin-top: 0;
   position: relative;
-  top:5px;
-  width:2.5% !important;
+  top: 5px;
+  width: 2.5% !important;
   float: left;
   display: inline;
 }
 
-.waiver{
+.waiver {
   font-family: "Inter Tight";
-  width:50%;
-  margin-top:10px;
-  font-size:16px;
+  width: 50%;
+  margin-top: 10px;
+  font-size: 16px;
   display: inline;
   float: left;
 }
 
-.why_intro_container:hover .why_fixed_background{
-  filter:blur(2px);
+.why_intro_container:hover .why_fixed_background {
+  filter: blur(2px);
 }
 
-.join_us_container input{
-  font-size:17px;
-  padding:20px;
-  background:black;
-  opacity:.4;
-  z-index:99;
-  margin-top:0px;
+.join_us_container input {
+  font-size: 17px;
+  padding: 20px;
+  background: black;
+  opacity: 0.4;
+  z-index: 99;
+  margin-top: 0;
   position: relative;
-  border-color:black;
-  border-radius:1px;
-  transition: all .5s;
-  width:50%;
-  margin-left:25%;
-  color:white;
-  border-width:1px;
+  border-color: black;
+  border-radius: 1px;
+  transition: all 0.5s;
+  width: 50%;
+  margin-left: 25%;
+  color: white;
+  border-width: 1px;
 }
 
-.join_us_container:focus input{
-  opacity:.7;
+.join_us_container:focus input,
+.join_us_container:hover input {
+  opacity: 0.7;
 }
 
-.join_us_container:hover input{
-  opacity:.7;
-}
-
-.join_us_container{
-  width:100%;
-  top:57.5%;
+.join_us_container {
+  width: 100%;
+  top: 57.5%;
   position: absolute;
   z-index: 5;
-  opacity:0;
+  opacity: 0;
 }
 
-.join_us_container--active{
-  opacity:1 !important;
-  animation:logo_into--2 1s ease-in 1;
+.join_us_container--active {
+  opacity: 1 !important;
+  animation: logo_into--2 1s ease-in 1;
 }
 
-.showcase_video--active{
+.showcase_video--active {
   animation: video_intro ease-in 1 1s;
-  opacity:1 !important;
+  opacity: 1 !important;
 }
 
-.showcase_video{
-  opacity:0;
-}
-
-.showcase_video{
+.showcase_video {
   animation: video_intro ease-in 1 1s;
-  width:100%;
+  width: 100%;
   object-fit: cover;
-  height:100%;
-  filter:blur(3px);
-  z-index:0;
-  padding:0%;
+  height: 100%;
+  filter: blur(3px);
+  z-index: 0;
+  padding: 0;
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }

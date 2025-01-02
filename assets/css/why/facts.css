@@ -6,6 +6,7 @@
   padding:10px;
   padding-left:0px;
 }
+
 .fact_section{
   padding:20px;
 }
@@ -16,10 +17,9 @@
   background:linear-gradient(to  bottom,rgba(22,7,24,1),rgba(22,7,24,.5),rgb(79, 135, 180,0)),url("./../../imgs/ee.png");
   border-radius: 10px;
   padding:30px;
-
   text-align: center;
-
 }
+
 .fact_col{
   box-shadow: 0px 0px 30px rgba(0,0,0,.5);
   padding:30px;
@@ -36,13 +36,12 @@
   margin-top:30px;
 }
 
-
 .fact_col p{
   margin-top:10px;
 }
+
 .fact_col .title{
   font-weight:bold;
-
 }
 
 .fact_col {
@@ -56,14 +55,13 @@
 
 .fact_box .title{
   width:50%;
-
   font-size:18px !important;
 }
+
 .fact_col {
    scrollbar-color: orangered #27294c ;
   scrollbar-width: thin;
 }
-
 
 .divider{
   margin-left:25%;
@@ -71,6 +69,7 @@
   margin-top:15%;
   background:lightblue;width:50%;
 }
+
 .fact_col .description{
   font-weight:400;
   font-size:16px;
@@ -88,12 +87,12 @@
   margin-top:50px;
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
+
 .img_col .title{
   font-size: 70px;
   font-weight: 600;
   font-size:orangered;
 }
-
 
 .img_col .subtitle{
   font-size: 20px;

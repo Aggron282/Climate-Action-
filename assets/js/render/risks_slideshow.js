@@ -5,7 +5,7 @@ var config_risks_slideshow = [
   {
     right:`
     <div class="visual_slide--1">
-      <img srcset="./assets/imgs/animals/coral.png 2x" src "./assets/imgs/animals/coral.png" />
+    <img src="./assets/imgs/slide/1.png"/>
     </div>
     `,
     left:
@@ -26,7 +26,7 @@ var config_risks_slideshow = [
   {
     right:`
     <div class="visual_slide--2">
-    <img srcset="./assets/imgs/animals/puffin.png 2x" src "./assets/imgs/animals/seaturtle.png" />
+    <img src="./assets/imgs/slide/2.png"/>
     </div>
     `,
     left:
@@ -40,6 +40,26 @@ var config_risks_slideshow = [
     </div>
     `,
     style:"text_slide--2"
+  },
+  {
+    right:`
+    <div class="visual_slide--3">
+    <img src="./assets/imgs/slide/3.png"/>
+    </div>
+    `,
+    left:
+    `
+    <div class="text_slide">
+      <p class="title">Every Drop Counts</p>
+      <p class="subtitle">
+         Act Now to Save Our Future
+       </p>
+       <button class="risk_slide_button">Learn More</button>
+
+    </div>
+
+    `,
+    style:"text_slide--3"
   }
 
 
@@ -52,7 +72,7 @@ function ToggleSlideShowRisks(){
 
   counter += 1;
 
-  if(counter > config_risks_slideshow.length - 1){
+  if(counter > config_risks_slideshow.length -1){
     counter = 0;
   }
 
@@ -62,7 +82,7 @@ function ToggleSlideShowRisks(){
 
   visual_container.classList.add("away_transition--left")
   text_container.classList.add("away_transition--right")
-  console.log(config_risks_slideshow[counter])
+
   setTimeout(
     ()=>{
 

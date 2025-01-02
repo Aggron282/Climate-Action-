@@ -1,52 +1,54 @@
-@media screen and (max-width:400px){
-  .why_it_matters_container{
-    background: linear-gradient(rgba(0,0,0,4.7),rgba(0,0,0,.6),rgba(0,0,0,.8),rgba(0,0,0,.99)), url("./../../imgs/fire--1.png") !important;
-  }
+@media screen and (max-width: 400px) {
+    .why_it_matters_container {
+        background: linear-gradient(
+            rgba(0, 0, 0, 4.7),
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.99)
+        ), url("./../../imgs/fire--1.png") no-repeat center !important;
+        background-size: cover;
+    }
 
-  .why_it_matters_container .title{
-    font-size:55px;
+    .why_it_matters_container .title {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+.why_it_matters_container {
+    width: 100%;
+    position: relative;
+    padding-top: 7.5%;
+    height: 70vh;
+    background: #4C9BB0;
+    background-size: cover;
+}
+
+.why_it_matters_container .title {
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.why_it_matters_container .title--2 {
+    font-size: 8rem;
+    position: absolute;
+    color: white;
+    opacity: 0.03;
+    left: 0;
+    top: 5%;
+    width: 100%;
     letter-spacing: 2px;
-  }
-
+    font-weight: 600;
+    text-align: left;
+    padding-left: 50px;
 }
 
-.why_it_matters_container{
-  width:100%;
-  position: relative;
-  padding-top:7.5%;
-  height:70vh;
-  background-size: cover;
-  background:#4C9BB0
-  /* background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1)), url("./../../imgs/water.png"); */
-}
-
-.why_it_matters_container .title{
-  font-size: 80px;
-  color:white;
-  letter-spacing: 4px;
-  font-weight: 600;
-  text-align: center;
-}
-
-
-
-.why_it_matters_container .title--2{
-  font-size: 130px;
-  position: absolute;
-  color:white;
-  opacity:.03;
-  left:0%;
-  top:5%;
-  width:100%;
-  letter-spacing: 2px;
-  font-weight: 600;
-  text-align: left;
-  padding-left:50px;
-}
-
-.why_it_matters_container .description{
-  padding:2.5%;
-  font-size:25px;
-  font-weight:300;
-  text-align: center;
+.why_it_matters_container .description {
+    padding: 2.5%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
 }

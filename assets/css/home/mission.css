@@ -1,118 +1,109 @@
-@media  screen and (max-width:400px){
+@media screen and (max-width: 400px) {
+    .mission_container {
+        position: relative;
+        z-index: 999;
+        padding-bottom: 40px;
+        margin-top: -85%;
+    }
 
-  .mission_container .subtitle{
-    font-size: 22px !important;
-  }
+    .mission_container .subtitle {
+        font-size: 22px !important;
+    }
+}
 
-  .mission_container{
+.mission_container {
+    padding: 20px 0;
     position: relative;
-    z-index: 999;
-    padding-bottom: 40px;
-    margin-top: -85%;
-  }
-
+    overflow: hidden;
+    padding-bottom: 20%;
+    background: linear-gradient(
+        to bottom,
+        rgba(87, 131, 143, 1),
+        rgba(30, 79, 88, 0.9),
+        rgba(30, 79, 88, 0.5)
+    ), url("./../../imgs/oooo.png") no-repeat center;
+    background-size: cover;
+    color: white;
+    font-family: "Kanit", sans-serif;
 }
 
-.mission_container .title{
-  text-align: center !important;
-  font-size: 60px !important;
-  margin-top:30px;
-  font-weight: 600 !important;
-
+.mission_container .title {
+    text-align: center !important;
+    font-size: 60px !important;
+    margin-top: 30px;
+    font-weight: 600 !important;
 }
 
-.mission_vid{
-  position:absolute;top:0;left:0;height:100%;width:100%;object-fit:fill
+.mission_container .subtitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 300;
 }
 
-.mission_container .subtitle{
-  text-align: center;
-  font-size: 40px;
-  margin-top:20px;
-  font-weight: 300;
+.mission_description {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: 200;
+    opacity: 0;
 }
 
-.mission_description{
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 2px;
-  margin-top:10px;
-  font-weight: 200;
-  opacity:0;
+.mission_description--active {
+    opacity: 1;
+    animation: fade_in 4s ease-in 1;
 }
 
-.mission_description--active{
-  opacity:1;
-  animation:fade_in 4s ease-in 1;
+.mission_vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.mission_container{
-  padding:20px;
-  padding-top:5px;
-  position:relative;overflow:hidden;
-  padding-bottom:20%;
-  object-fit: cover;
-  background-size: cover;
-
-  background: linear-gradient(to  bottom,rgb(87,131,143,1), rgb(30,79,88,.9),rgb(30,79,88,.5)), url("./../../imgs/oooo.png");
-  color:white;
-  font-family: "Kanit";
-  background-size: cover;
-
-}
-
-.mission_title{
-  transform: translateY(100px);
-  opacity:0;
-}
-
-.mission_subtitle{
-  transform: translateY(100px);
-  opacity:0;
-}
-
-@keyframes slide_from_bottom{
-  0%{
+.mission_title {
     transform: translateY(100px);
-    opacity:0;
-  }
-  50%{
+    opacity: 0;
+}
+
+.mission_subtitle {
     transform: translateY(100px);
-    opacity:0;
-  }
-  100%{
-    transform: translateY(0px);
-    opacity:1;
-  }
+    opacity: 0;
 }
 
-
-@keyframes slide_from_right{
-  0%{
-    transform: translateX(100px);
-    opacity:0;
-  }
-  70%{
-    transform: translateX(100px);
-    opacity:0;
-  }
-  100%{
-    transform: translateX(0px);
-    opacity:1;
-  }
+@keyframes slide_from_bottom {
+    0%, 50% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-.mission_title--active{
-  transform: translateY(0px);
-  opacity:1 ;
-  animation: slide_from_bottom 1s ease-in 1;
+@keyframes slide_from_right {
+    0%, 70% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
+.mission_title--active {
+    transform: translateY(0);
+    opacity: 1;
+    animation: slide_from_bottom 1s ease-in 1;
+}
 
-
-.mission_subtitle--active{
-  transform: translateY(0px);
-  opacity:1 ;
-  animation: slide_from_right 2s ease-in 1;
-
+.mission_subtitle--active {
+    transform: translateY(0);
+    opacity: 1;
+    animation: slide_from_right 2s ease-in 1;
 }
