@@ -4,58 +4,58 @@
     <meta charset="utf-8">
     <title></title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-
-
     <meta name="author" content="Marco Khodr MacEwen">
     <meta name="keywords" content="climate-change climate climate-disaster global warming habitat-loss">
     <meta name="description" content="Site dealing with the dangers of climate change and warn about the dangers while also providing solutions to solve it">
 
-
-    <!-- only used google fonts thats it Roboto and Kanit with its respective font weights -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,wght@1,600&family=Work+Sans:ital,wght@1,900&display=swap" rel="stylesheet">      <nav id = "navbar">
 
-
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/nav.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/main.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/animations.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/footer.css">
-
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/risks/showcase.css">
-
-
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/nav.css">
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/main.css">
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/animations.css">
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/risks/showcase.css">
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/risks/data.css">
+    <link rel = "stylesheet" type="text/css" href = "./assets/css/risks/habitat.css">
 
 </head>
+
 <body>
 
-  <nav class="navbar">
+    <nav class="navbar navbar--risks"></nav>
 
-  </nav>
+    <div class="risks_showcase_container">  </div>
 
-  <div class="risks_showcase_container">
+    <div class="habitat_loss_container habitat_loss__polarbear " id="habitat_sec">
 
-      <div class="inner-container--risks">
+      <div class="detail_container"></div>
 
-          <div class="text-container">
-              <p class="title"> Heading</p>
-              <p class="subtitle"> Subtitle</p>
-              <p class="description"> Call to action</p>
+    </div>
 
-            <svg id="wave--side" viewBox="0 0 1440 450" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(33, 42, 62, 1)" offset="0%"></stop><stop stop-color="rgba(33, 42, 62, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,180L10.9,157.5C21.8,135,44,90,65,90C87.3,90,109,135,131,180C152.7,225,175,270,196,277.5C218.2,285,240,255,262,270C283.6,285,305,345,327,337.5C349.1,330,371,255,393,187.5C414.5,120,436,60,458,75C480,90,502,180,524,210C545.5,240,567,210,589,180C610.9,150,633,120,655,157.5C676.4,195,698,300,720,292.5C741.8,285,764,165,785,135C807.3,105,829,165,851,165C872.7,165,895,105,916,90C938.2,75,960,105,982,142.5C1003.6,180,1025,225,1047,225C1069.1,225,1091,180,1113,165C1134.5,150,1156,165,1178,180C1200,195,1222,210,1244,210C1265.5,210,1287,195,1309,210C1330.9,225,1353,270,1375,240C1396.4,210,1418,105,1440,112.5C1461.8,120,1484,240,1505,255C1527.3,270,1549,180,1560,135L1570.9,90L1570.9,450L1560,450C1549.1,450,1527,450,1505,450C1483.6,450,1462,450,1440,450C1418.2,450,1396,450,1375,450C1352.7,450,1331,450,1309,450C1287.3,450,1265,450,1244,450C1221.8,450,1200,450,1178,450C1156.4,450,1135,450,1113,450C1090.9,450,1069,450,1047,450C1025.5,450,1004,450,982,450C960,450,938,450,916,450C894.5,450,873,450,851,450C829.1,450,807,450,785,450C763.6,450,742,450,720,450C698.2,450,676,450,655,450C632.7,450,611,450,589,450C567.3,450,545,450,524,450C501.8,450,480,450,458,450C436.4,450,415,450,393,450C370.9,450,349,450,327,450C305.5,450,284,450,262,450C240,450,218,450,196,450C174.5,450,153,450,131,450C109.1,450,87,450,65,450C43.6,450,22,450,11,450L0,450Z"></path></svg>
+    <div class="risks_data_container"></div>
 
-          </div>
+    <div class="risks_map_container"></div>
+
+    <div class="risks_disasters_container">  </div>
+
+    <footer class= "footer_ footer--why">  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>  <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.min.js  "></script>
+
+    <script src = "./assets/js/render/navbar.js"></script>
+    <script src="./assets/js/effect/overlay_effect.js"></script>
+
+    <script src="./assets/js/render/risks/render_showcase.js"></script>
+    <script src="./assets/js/render/risks/render_data.js"></script>
+    <script src="./assets/js/render/risks/render_map_risk.js"></script>
+    <script src="./assets/js/render/risks/render_habitat.js"></script>
+    <script src="./assets/js/render/footer.js"></script>
 
 
-          <div class="image-container">
 
-          </div>
-
-      </div>
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src = "./assets/js/render/navbar.js"></script>
   </body>
-  </html>
+</html>

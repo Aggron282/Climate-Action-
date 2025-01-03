@@ -101,6 +101,3 @@ function RenderFactSection(){
     }
 
 }
-
-
-RenderFactSection();

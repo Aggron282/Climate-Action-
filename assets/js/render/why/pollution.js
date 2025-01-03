@@ -249,5 +249,3 @@ async function RenderFactsAndResources(){
 async function Delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-RenderPollutedSection();

@@ -324,9 +324,3 @@ function Generate3DBubbles(){
   });
 
 }
-
-
-
-
-
-RenderWarmOceans();
