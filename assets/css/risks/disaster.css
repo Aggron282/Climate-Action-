@@ -1,0 +1,30 @@
+.disaster_card{
+  box-shadow: 0px 0px 10px rgba(255,0,0,.5);
+  position: absolute;
+  top:0%;
+  height:100%;
+  width:100px;
+  background: none;
+}
+
+.disaster_display_container{
+  background-color: black;
+  position: relative;
+  height:50%;
+}
+.disaster_scroll_container{
+  position: relative;
+  z-index: 99;
+  height:50%;
+  padding:30px;
+  overflow-x: scroll;
+
+}
+.disaster_card img {
+  width:100%;
+}
+
+.risks_disasters_container{
+  position: relative;
+  height:100vh;
+}

@@ -166,6 +166,13 @@ function PopulateContent(c){
 
 }
 
+
+
+RenderHabitatBubbles();
+
+PopulateContent(0);
+
+
 var bubbles = document.getElementsByClassName("animal_bubble");
 
 for(var i = 0; i < bubbles.length; i ++){
@@ -180,7 +187,3 @@ for(var i = 0; i < bubbles.length; i ++){
 
   })
 }
-
-RenderHabitatBubbles();
-
-PopulateContent(0);

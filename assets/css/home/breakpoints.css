@@ -1,0 +1,81 @@
+/* Base Styles (default for small devices and phones in portrait mode) */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color: lightgreen; /* Example style */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .link_box--title {
+    margin-left: 2.5%;
+    margin-right: 10%;
+  }
+  .link_box {
+    margin-left: 2.5%;
+  }
+  .logo_box--image {
+    width: 55%;
+    margin-left: 25%;
+  }
+  #company_name {
+    font-size: 55px;
+  }
+  .join_us_container {
+    top: 50%;
+  }
+  .checkbox_join{
+    margin-top:50px;
+    height:40px;width:40px;
+  }
+  .waiver{
+    margin-top:30px;
+    margin-left:20px;
+  }
+  .mission_container .subtitle {
+    font-size: 60px;
+    margin-top: 200px;
+  }
+  .mission_container .title {
+    text-align: center !important;
+    font-size: 100px !important;
+    margin-top:50px
+  }
+  .mission_container {
+    padding-bottom:50%;
+  }
+
+  .why_intro_container .title {
+    font-size: 100px;
+  }
+
+  .why_intro_container{
+    padding-bottom:10%;
+  }
+  .why_intro_learn{
+    padding:20px;
+    font-size:30px;
+  }
+
+  .solution_choice_container{
+        height: 36vh;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  body {
+    background-color: lightcoral; /* Example style */
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  body {
+    background-color: lightgoldenrodyellow; /* Example style */
+    font-size: 18px;
+  }
+}
+
+.why_fixed_background{
+  background-size:cover;
+}
