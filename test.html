@@ -3,157 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Lamp Effect</title>
+    <title>Join the Climate Action Movement</title>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background:linear-gradient(to right bottom,#FF8C00 #FFB347);
-        }
-        canvas {
-            display: block;
-        }
+    
     </style>
 </head>
 <body>
-    <canvas id="s"></canvas>
 
-    <script>
 
-        const canvas = document.getElementById('s');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
 
-        // Flame properties
-        const particles = [];
-        const numParticles = 100;
-        const colors = ['#FF4500', '#FF6347', '#FFA07A', '#FFD700'];
-        const gravity = 0.0005;
-        const wind = Math.random() * -0.001 + Math.random() * .002;
+<script>
+    // Display the popup banner
 
-        class Particle {
-          constructor(x, y) {
-            this.x = Math.random() *canvas.width;
-            this.y = canvas.height - 20;
-            this.vx = (Math.random() - 0.5) * 2;
-            this.vy = -Math.random() * 3 - 1;
-            this.alpha = 1;
-            this.size = Math.random() * 1 + .05;
-            this.color = colors[Math.floor(Math.random() * colors.length)];
-          }
+</script>
 
-          update() {
-            this.vx += wind;
-            this.vy += gravity;
-            this.x += this.vx;
-            this.y += this.vy;
-            this.alpha -= 0.002;
-            if (this.alpha <= 0) {
-              this.reset();
-            }
-          }
-
-          reset() {
-            this.x = Math.random() *canvas.width;
-            this.y = canvas.height - 20;
-            this.vx = (Math.random() - 0.5) * 2;
-            this.vy = -Math.random() * 3 - 1;
-            this.alpha = 1;
-            this.size = Math.random() * 1 + .05;
-            this.color = colors[Math.floor(Math.random() * colors.length)];
-          }
-
-          draw() {
-
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-            gradient.addColorStop(0, `rgba(255, 69, 0,${this.alpha})`);
-            gradient.addColorStop(1, `rgba(255, 140, 0,${this.alpha})`);
-            ctx.fillStyle = gradient;
-            // ctx.fillStyle = `rgba(${this.hexToRgb(this.color)}, ${this.alpha})`;
-            ctx.fill();
-          }
-
-          hexToRgb(hex) {
-            const bigint = parseInt(hex.slice(1), 16);
-            const r = (bigint >> 16) & 255;
-            const g = (bigint >> 8) & 255;
-            const b = bigint & 255;
-            return `${r},${g},${b}`;
-          }
-        }
-
-        // Initialize particles
-        var c = 0;
-        var timer = setInterval(()=>{
-        if(c >=2){
-          timer = null;
-          return;
-        }
-        for (let i = 0; i < numParticles; i++) {
-          particles.push(new Particle(canvas.width / 2, canvas.height - 20));
-        }
-        c++;
-
-        },2000);
-
-        function animate() {
-          ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
-          ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-          particles.forEach((particle) => {
-            particle.update();
-            particle.draw();
-          });
-
-          requestAnimationFrame(animate);
-        }
-
-        animate();
-
-        // Adjust canvas size on window resize
-        window.addEventListener('resize', () => {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-        });
-
-    </script>
 </body>
 </html>
-
-
-<!-- <div class="gooey-bubbles">
-      <span class="goos"></span>
-      <span class="goos"></span>
-      <span class="goos"></span>
-</div>
-
-<svg>
-<filter id="gooey">
-<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-<feColorMatrix
-in="blur"
-mode="matrix"
-values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
-result="goo"
-/>
-<feBlend in="SourceGraphic" in2="goo" />
-</filter>
-</svg> -->
-
-
-
-
-<!-- <div class="lava_graphic_column">
-  <div class="lava_lamp_container">
-    <div class="lamp--top lamp" ></div>
-
-    <div class="lamp--bottom lamp" ></div>
-    <canvas id="lavaLamp"width=500 height=500></canvas>
-    <div class="shadow"></div>
-
-
-  </div>
-</div> -->

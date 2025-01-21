@@ -135,7 +135,7 @@ async function CalcGlobalTemps(){
           temps.push(yearAverage);
       });
 
-      RenderGraph(container,"line",years,temps);
+      RenderGraph(container,"line",years,temps,"Avg. Temperature");
     },2000);
 
 }
@@ -216,7 +216,7 @@ async function CalcOceanLevels(){
   SpawnDots(container);
   clearTimeout(calcTimer);
   calcTimer = setTimeout(()=>{
-    RenderGraph(container,"line",levels,years);
+    RenderGraph(container,"line",levels,years,"Sea Level Change");
   },3000);
 }
 
@@ -235,7 +235,7 @@ function CalcEmissionLevels(){
   SpawnDots(container);
   clearTimeout(calcTimer);
   calcTimer = setTimeout(()=>{
-    RenderGraph(container,"line",levels,years);
+    RenderGraph(container,"line",levels,years,"Emission");
   },3000);
 
 }
@@ -255,7 +255,7 @@ function CalcAnimalPopulations(){
   SpawnDots(container);
   clearTimeout(calcTimer);
   calcTimer = setTimeout(()=>{
-    RenderGraph(container,"pie",threat,percentage);
+    RenderGraph(container,"pie",threat,percentage,"Threats");
   },3000);
 
 }
@@ -274,7 +274,7 @@ function RenderGraphChoices(){
   function ReturnBubbleHTML(data){
       return `
         <div class="bubble_row ${data.class_}">
-          <div classs="bubble chart--bubble " id="${data.class_}"  >
+          <div classs="bubble chart--bubble " class="xx" id="${data.class_}"  >
             <img class="graphic chart--graphic" src = ${data.img} />
             <div class="b-chart-graphic"></div>
             <p class = "title">${data.heading}</p>
@@ -292,23 +292,42 @@ async function Init(){
   RenderDefault();
 
   document.querySelector("#bubble--1").addEventListener("click",(e)=>{
+    e.stopPropagation();
     CalcGlobalTemps();
+    SetActiveDataButton(e.target);
   })
 
   document.querySelector("#bubble--3").addEventListener("click",(e)=>{
+    e.stopPropagation();
     CalcAnimalPopulations();
+    SetActiveDataButton(e.target);
   })
 
   document.querySelector("#bubble--4").addEventListener("click",(e)=>{
+    e.stopPropagation();
     CalcEmissionLevels();
+    SetActiveDataButton(e.target);
   })
 
   document.querySelector("#bubble--2").addEventListener("click",(e)=>{
+    e.stopPropagation();
     CalcOceanLevels();
+    SetActiveDataButton(e.target);
   })
 
 }
 
+function SetActiveDataButton(element){
+
+  var b = document.querySelectorAll(".chart--graphic");
+
+  for(var i =0; i < b.length; i++){
+      b[i].classList.remove("xx-active");
+  }
+
+  element.classList.add('xx-active');
+  console.log(element,b)
+}
 
 
 Init();

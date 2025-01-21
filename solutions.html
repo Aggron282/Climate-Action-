@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+
+
     <head>
 
       <meta charset="utf-8">
       <title></title>
-      <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,wght@1,600&family=Work+Sans:ital,wght@1,900&display=swap" rel="stylesheet">      <nav id = "navbar">
+      <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,wght@1,600&family=Work+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/home/showcase.css">
       <link rel = "stylesheet" type="text/css" href = "./assets/css/main.css">
       <link rel = "stylesheet" type="text/css" href = "./assets/css/nav.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/home/mission.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/home/solutions.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/home/risks.css">
-      <link rel = "stylesheet" type="text/css" href = "./assets/css/home/why.css">
       <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/showcase.css">
-      <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/do.css">
       <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/solutions.css">
       <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/productivity.css">
-      <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/learn.css">
+      <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/form.css">
+      <link rel = "stylesheet" type = "text/css" href = "./assets/css/home/solutions.css">
+
       <!-- <link rel = "stylesheet" type = "text/css" href = "./assets/css/solutions/help.css"> -->
       <link rel = "stylesheet" type="text/css" href = "./assets/css/animations.css">
       <link rel = "stylesheet" type="text/css" href = "./assets/css/footer.css">
@@ -38,7 +33,12 @@
   </head>
 
   <body>
-    <nav class="navbar navbar--risks"></nav>
+    <div class="popup-banner" id="popupBanner">
+        Thank you for joining the movement!
+    </div>
+
+    <nav class="navbar">  </nav>
+
     <div class="showcase_container--solutions">
         <div class="text-container">
             <p class="title">Become the Solution!</p>
@@ -55,14 +55,109 @@
                   <div class="detail-container">
                     <p> Join us in the fight against climate change! Together, we can protect our planet for future generations. Be part of a community dedicated to sustainable living, reducing carbon footprints, and advocating for environmental policies. Take action now to make a real difference. Every small step counts—join the movement today!</p>
                   </div>
-                  
+
                 </div>
             </div>
         </div>
     </div>
 
-    <script src = "./assets/js/render/navbar.js"></script>
+    <div class="productivity_container">
 
+    </div>
+
+    <div class="solutions_intro_container">
+
+      <p class="title"> Ways You Can Help Stop It! </p>
+
+        <div class="solution_inner_container">
+
+            <div class="solution_choice_container solution_choice_container--1">
+              <img src = "assets/imgs/3.png"/>
+              <p> Develop Planet-Friendly Habits</p>
+              <a href = "https://www.basf.com/us/en/who-we-are/change-for-climate.html?at_medium=display&at_campaign=COM_BAW_US_EN_Climate-Protection_TRA_Microsoft-Ads-Generic-Phrase-2023&at_creation=Search_Microsoft-Corporation_EN_Text-Ad_FY23-Generic-Bing-Climate-Protection&at_channel=Microsoft-Corporation&at_format=Text-Ad&at_variant=Climate-Protection_1x1_EN-Generic-Bing-Climate-Protection&utm_source=bing&utm_medium=cpc&utm_campaign=COM_BAW_US_EN_Climate-Protection_TRA_Microsoft-Ads-Generic-Phrase-2024&utm_term=Climate%20action&utm_content=Search_Microsoft-Corporation_EN_Text-Ad_FY24-Generic-Bing-Climate-Protection&gclid=CJ-H3aiozoUDFQ2KxQIdqbsFoQ&gclsrc=ds"><button class="s-btn"> Get Started </button></a>
+             </div>
+
+             <div class="solution_choice_container solution_choice_container--2">
+              <img src = "assets/imgs/1.png"/>
+              <p> Get active in your community</p>
+              <a href = "https://www.seedyourfuture.org/volunteering"><button class="s-btn" > Discover More </button></a>
+            </div>
+
+            <div class="solution_choice_container solution_choice_container--3">
+              <img src = "assets/imgs/2.png"/>
+              <p> Learn About Green Inovation</p>
+              <a href = "https://www.charitywater.org/donate/the-spring?utm_source=adwords&utm_campaign=donor-acq-usrow&utm_term=utm_source=adwords&utm_campaign=donor-acq-us&utm_term=cBC_CW_G_GRANT_SEARCH_NB_ALL_US+ROW_OBSV_DONATIONS_TROAS_ALL_ALL&utm_medium=grant-ppc&utm_content=non-branded&utm_medium=grant-ppc&utm_content=non-branded&utm_source=adwords&utm_medium=grant-ppc&gad_source=1&gclid=EAIaIQobChMIyNSl_KfOhQMVABCtBh3xpAO3EAAYASAAEgKOF_D_BwE"><button class="s-btn"> Get Involved </button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="join_form_container">
+      <div class="form-background"></div>
+      <div class="form-container">
+          <h1>Join the Climate Action Movement</h1>
+          <form id = "join-f">
+              <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="country">Country</label>
+                  <select id="country" name="country" required>
+                      <option value="">Select your country</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="AU">Australia</option>
+                      <option value="IN">India</option>
+                      <!-- Add more countries as needed -->
+                  </select>
+              </div>
+
+              <div class="form-group">
+                  <label for="message">Why do you want to join?</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Tell us your motivation..."></textarea>
+              </div>
+
+              <div class="form-group">
+                  <button type="submit" id = "join-b">Join Now</button>
+              </div>
+          </form>
+      </div>
+
+    </div>
+
+    <footer class= "footer_ footer--why">  </footer>
+
+    <script src = "./assets/js/animate/animate_on_scroll.js"></script>
+    <script src = "./assets/js/render/navbar.js"></script>
+    <script src = "./assets/js/animate/solution_scroll_animation.js"></script>
+    <script src = "./assets/js/render/solutions/render_productivity.js"></script>
+    <script src = "./assets/js/render/footer.js"></script>
+    <script src = "./assets/js/popup.js"></script>
+    <script>
+
+      var form_s = document.getElementById("join-f");
+      var btn_s = document.getElementById("join-b");
+
+      form_s.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        ShowPopup("Thanks for Subscribing!")
+      })
+      btn_s.addEventListener("click",(e)=>{
+        e.preventDefault();
+        ShowPopup("Thanks for Subscribing!")
+      })
+
+
+    </script>
   </body>
 
 </html>

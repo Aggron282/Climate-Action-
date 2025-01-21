@@ -17,8 +17,9 @@
   position: absolute;
   height: 1200px;
   top:5%;
-    width: 500px;
-    z-index: 999;
+  left:25%;
+  width: 500px;
+  z-index: 999;
 
 }
 
@@ -42,12 +43,12 @@
 
 .graph_display_container .circle{
   border-radius:50%;
-  width:800px;
+  width:1000px;
   position: absolute;
-  top:0;left:-40%;
-  margin-top:0%;
-  height:800px;
-
+  top:0;left:-20%;
+  margin-top:-5%;
+  height:1000px;
+  opacity:.2;
   background: linear-gradient(to right,#27294c,#1e2040);
   background:#1e2040;
 }
@@ -76,11 +77,17 @@
   transition: all .5s;
   z-index: 2;
   background:#1a1b3b ;
+
 }
 
 .chart--graphic:hover{
   background:#6b71d8 !important;
   transform: rotateZ(4deg) translateY(-10px);
+}
+
+.xx-active{
+  background:#6b71d8 !important;
+  transform: rotateZ(4deg) translateY(-10px) !important;
 }
 
 .chart--graphic--active{
