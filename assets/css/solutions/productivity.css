@@ -6,6 +6,7 @@
       rgba(5, 75, 102, 1),  /* Dark teal */
       rgba(59, 174, 160, 1),/* Light teal */
       rgba(59, 174, 160, 1)/* Green */
+
   );
 }
 .impact-section{
@@ -39,7 +40,7 @@
 }
 
 .metric img {
-  width: 200px;
+  width: 100px;
   height: 200px;
   margin-bottom: 15px;
 }

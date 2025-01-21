@@ -11,7 +11,17 @@
       rgba(59, 174, 160, 1),/* Light teal */
       rgba(59, 174, 160, 1)/* Green */
   );
+  background:   rgba(59, 174, 160, 1)
 
+}
+.solutions_intro_container{
+  padding:40px;
+  background: linear-gradient(to  bottom,
+      rgba(5, 75, 102, 1) 0%,
+        rgba(5, 75, 102, 1) 50%,  /* Dark teal */
+      rgba(59, 174, 160, 1) 80%,/* Light teal */
+      rgba(59, 174, 160, 1) 100%/* Green */
+  ) !important;
 }
 .form-background{
   width:100%;

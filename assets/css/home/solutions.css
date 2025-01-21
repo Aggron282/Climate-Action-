@@ -64,7 +64,10 @@
   font-family: "Kanit";
   font-size:17px;
 }
-
+.solutions_intro_container{
+  background:   #91b3c4;
+  padding:40px;
+}
 .s-btn{
   transition:all 1s;
 }
