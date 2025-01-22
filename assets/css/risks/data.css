@@ -1,7 +1,7 @@
 .risks_data_container{
   width:100%;
   height:100vh;
-  margin-top:5%;
+  margin-top:0%;
   display: grid;
   overflow: hidden;
   padding:10px;
@@ -10,6 +10,9 @@
 }
 
 
+.shape-fill {
+  fill: #27294c !important;
+}
 
 #chart{
   width:600px !important;

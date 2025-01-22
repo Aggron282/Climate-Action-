@@ -1,30 +1,93 @@
-.disaster_card{
-  box-shadow: 0px 0px 10px rgba(255,0,0,.5);
-  position: absolute;
-  top:0%;
-  height:100%;
-  width:100px;
-  background: none;
-}
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  transition: all .5s;
 
-.disaster_display_container{
-  background-color: black;
-  position: relative;
-  height:50%;
-}
-.disaster_scroll_container{
-  position: relative;
-  z-index: 99;
-  height:50%;
-  padding:30px;
-  overflow-x: scroll;
+  padding:50px;
 
 }
-.disaster_card img {
-  width:100%;
+
+
+
+.info-container strong{
+  padding-top:50px;
+}
+.info-container h2{
+  text-transform: capitalize;
+}
+.info-container{
+  animation:.5s ease-in 1 blackin;
+}
+@keyframes blackin{
+  0%{
+    filter:brightness(0);
+  }
+  100%{
+    filter:brightness(1);
+
+  }
+}
+.info-container {
+  width: 90%;
+  transition: all .5s;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 20px;
+  padding-top: 10px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.info-container h2 {
+  margin: 0 0 10px;
+  margin-top: 20px;
+
+}
+
+.info-container p {
+  margin: 0;
+  font-family: "Kanit"
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.row div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .risks_disasters_container{
-  position: relative;
-  height:100vh;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+.risks_disasters_container .title{
+  font-family: "Kanit";font-weight: 500;
+  font-size: 50px;
+
+  text-align: center;
+}
+
+.row div:hover {
+  transform: scale(1.1);
+}
+
+.row img {
+  max-width: 80%;
+  max-height: 80%;
 }

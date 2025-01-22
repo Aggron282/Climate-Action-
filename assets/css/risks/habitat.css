@@ -120,7 +120,7 @@ li {
 .habitat_loss_container{
   background: linear-gradient(rgba(4, 13, 43, 1), rgba(87,131,143,.7)),url("./../../imgs/bear.png");
   padding-bottom:40%;
-  padding-top: 0%;
+  padding-top: 5%;
   padding-left:5%;
   margin-top:0;
   position: relative;
