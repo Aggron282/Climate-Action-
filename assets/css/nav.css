@@ -181,3 +181,21 @@ nav{
   font-weight: 200;
   text-align: center;
 }
+
+@media screen and (max-width:1200px) and (min-width:700px) and (orientation:landscape){
+  .link_box{
+    margin-left:5%;
+  }
+  .link_box--title{
+    margin-right:10%;
+  }
+  .waves_container{
+    margin-top: -30%;
+  }
+  .text_slideshow_column{
+    margin-top:100px;
+  }
+  .grid-container--pollution{
+    grid-template-rows:repeat(2,250px); 
+  }
+}
