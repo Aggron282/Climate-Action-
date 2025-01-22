@@ -28,6 +28,9 @@
 
 </head>
 <body>
+  <div class="popup-banner" id="popupBanner">
+      Thank you for joining the movement!
+  </div>
   <nav class="navbar">
       </nav>
 
@@ -47,12 +50,12 @@
                   <source type = "video/mp4" src = "assets/imgs/showcase--3.mp4"></source>
               </video>
 
-              <div class="join_us_container">
+              <div class="join_us_container"id="join-f">
 
                   <form class="action_form">
 
-                    <input placeholder="Enter Email Address" name = "email">
-                    <input class = "checkbox_join" type = "checkbox" name = "signup">
+                    <input class="form-control" placeholder="Enter Email Address" name = "email"  required>
+                    <input class = "checkbox_join" type = "checkbox" required name = "signup" >
 
                     <p class="waiver">
                       By submitting your email you are agreeing to receive our emails. Read our privacy policy and terms and conditions.
@@ -136,12 +139,22 @@
 
       </footer>
 
-      <script src = "./assets/js/render/form.js"></script>
       <script src = "./assets/js/animate/animate_on_scroll.js"></script>
       <script src = "./assets/js/animate/home_scroll_animation.js"></script>
       <script src = "./assets/js/render/risks_slideshow.js"></script>
       <script src = "./assets/js/render/footer.js"></script>
       <script src = "./assets/js/render/navbar.js"></script>
+      <script src = "./assets/js/popup.js"></script>
+      <script>
+
+        var form_s = document.getElementById("join-f");
+
+        form_s.addEventListener("submit",(e)=>{
+          e.preventDefault();
+          ShowPopup("Thanks for Subscribing!")
+        })
+
+        </script>
   </body>
 
 </html>

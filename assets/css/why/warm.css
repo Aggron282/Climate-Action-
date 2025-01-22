@@ -12,7 +12,7 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: 10% 60% 30%;
+  grid-template-columns: 5% 60% 35%;
   grid-template-rows: 50% 50%;
   position: relative;
 }
@@ -100,10 +100,14 @@
   margin-top: 10%;
   text-align: center;
   padding: 30px;
+  z-index: 999;
+  position: relative;
 }
 
 .text-container--warm_ocean p {
   margin-top: 10px;
+  line-height: 1.3;
+  text-shadow: 0px 0px 2px black;
 }
 
 .text-container--warm_ocean .title {
@@ -129,27 +133,69 @@
   width: 50%;
   padding-left: 30px;
   display: grid;
+  position: relative;
   grid-template-columns: 50% 50%;
 }
 
+.toggle-container--warm_ocean * {
+  z-index: 99;
+  position: relative;.
+}
 /* Animations */
 .transition--up {
-  animation: up 1s ease-in;
+  animation: up .5s ease-in;
   opacity: 1;
 }
 
 .transition--down {
-  animation: down 1s ease-in;
+  animation: down .4s ease-in;
   opacity: 1;
 }
 
+.toggle_button {
+  font-weight:500;
+  font-size:30px;
+  position: relative;
+  transition: all .5s;
+  font-family: "Kanit";
+  color:white;
+  width:100%;
+}
+.toggle_button *{
+  transition: all .5s;
+}
+.toggle_button:hover .underline{
+  width:80% !important;
+  background:orangered;
+}
+.toggle_button--next:hover .underline{
+  width:50% !important;
+}
+.toggle_button .underline{
+  width:100%;
+  position: absolute;
+  bottom:0%;
+  left:0%;
+  background:white;
+  z-index: 99;
+  width:0%;
+  height:5px;
+  border-radius: 10px;
+}
+
+
+.toggle_button:hover p {
+  color:orangered;
+}
+
+
 .transition--right {
-  animation: right 1s ease-in;
+  animation: right .6s ease-in;
   opacity: 1;
 }
 
 .transition--left {
-  animation: left 1s ease-in;
+  animation: left .5s ease-in;
   opacity: 1;
 }
 

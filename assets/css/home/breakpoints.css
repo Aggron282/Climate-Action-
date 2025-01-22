@@ -79,3 +79,52 @@
 .why_fixed_background{
   background-size:cover;
 }
+
+.action_form{
+    padding-top: 2.5%;
+    margin-left: 25%;
+    width: 50%;
+    top: 45%;
+    z-index: 9999;
+    position: absolute;
+}
+.action_form .form-control{
+  width: 100%;
+  padding: 10px;
+  color:white;
+  border:none;
+  border-radius:10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  color: #333333;  /* Dark grey text */
+    background-color: #f0f0f0;  margin-bottom: 30px
+}
+.checkbox_join{
+  float:left;
+  margin-top: 20px;
+  width:20px;
+  height:20px;
+}
+  .waiver {
+        margin-top: 30px;
+        float: right;
+        margin-top: 50px;
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 10px;
+        padding:5px;
+        color:white;
+
+        transition: all .5s;
+    }
+
+
+    .form-control:focus ~ .waiver {
+      background: #e6e6e6;
+      color: black;
+    }
+.checkbox_join:hover ~ .waiver,.waiver:hover{
+  background:#e6e6e6;
+  color:black;
+
+
+}

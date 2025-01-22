@@ -13,6 +13,26 @@
 
 }
 
+
+.popup-banner {
+    position: fixed;
+    top: 5%;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.popup-banner.show {
+    right: 0%;
+}
+
 @keyframes hover_link{
   0%{
     transform:scale(1);

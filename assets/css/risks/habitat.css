@@ -1,32 +1,132 @@
-@media screen and (max-width:400px){
+
+
+@media screen and (min-width:600px){
 
   .bubble_container{
-    margin-top:10% !important;
+    margin-top:5%;
   }
 
   .habitat_loss_container{
-    padding-bottom:200% !important;
-    padding-top:25%;
-    margin-top:-10%;
+    background-size:fill;
+    padding-bottom:40%;
+    background-repeat: no-repeat;
   }
-  .bubble_container{
-    width:90% !important;
-  }
+
+}
+
+.habitat_loss_container p{
+  font-family: "Kanit"
+}
+
+.habitat_loss_container .title{
+  padding-top: 5%;
+  font-size: 40px;
+  margin:0px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.habitat_loss_container .subtitle{
+  font-size:20px;
+  font-weight: 300;
+  width:70%;
+}
+
+
+.animal_bubble{
+  width:100px;
+  margin-left: 2.5%;
+  float: left;
+  border-radius:50%;
+  transition: all .5s;
+  margin-top:2.5%;
+  /* position: absolute !important; */
+  height:100px;
+}
+
+.animal_bubble:hover{
+  transform: scale(1.1);
+  box-shadow:0px 0px 20px teal;
+}
+
+.bubble_active{
+  transform: scale(1.1);
+  border:2px solid limegreen;
+  box-shadow:0px 0px 20px teal;
+}
+
 .detail_container{
-  width: 100% !important;
+  width:50%;
+  float:right;
+  padding-right:5%;
 }
-.emission_container .text_box{width:90% !important}
+
+.detail_title{
+  transform: scale(1);
+  opacity:1;
+  animation: .5s ease-in 1 show_in;
 }
-.emission_image {
-  visibility: hidden;
+
+
+.detail_description{
+  transform: scale(1);
+  opacity:1;
+  font-weight:400;
+  font-size:25px;
+  animation: 1s ease-in 1 show_in;
 }
+
+.bubble_container{
+  width:30%;
+  margin-left:2.5%;
+  float: left;
+}
+
+.animal_bubble img{
+  width:100%;
+  border-radius:50%;
+  object-fit: contain;
+}
+
+.heading--1{
+  font-size:30px;
+  padding-left:2.5%;
+}
+
+.right-light{
+  width:50%;
+  float: right;
+}
+
+.left-light{
+  width:50%;
+  float: left;
+}
+
+.animal{
+  margin-top:5%;
+  font-weight: 100;
+  font-size:20px;
+}
+
+li {
+  font-size:15px;
+  width:70%;
+  list-style-type:square;
+  text-decoration: none;
+  font-weight:200;
+}
+
 
 .habitat_loss_container{
   background: linear-gradient(rgba(4, 13, 43, 1), rgba(87,131,143,.7)),url("./../../imgs/bear.png");
-  padding-bottom:70%;
+  padding-bottom:40%;
+  padding-top: 0%;
   padding-left:5%;
+  margin-top:0;
   position: relative;
 }
+
+
 
 .habitat_loss--articfox {
   background: linear-gradient(rgba(4, 13, 43, 1), rgba(87,131,143,.7)),url("./../../imgs/habitat_fox.png");
@@ -63,134 +163,4 @@
 
 .habitat_loss--penguin {
   background: linear-gradient(rgba(4, 13, 43, 1), rgba(87,131,143,.7)),url("./../../imgs/habitat_penguin.png");
-}
-
-@media screen and (min-width:600px){
-
-  .bubble_container{
-    margin-top:5%;
-  }
-
-  .habitat_loss_container{
-    background-size:fill;
-    padding-bottom:40%;
-    background-repeat: no-repeat;
-  }
-
-}
-
-.habitat_loss_container .title{
-  padding-top: 10%;
-  font-size: 30px;
-  margin:0px;
-  letter-spacing: 2px;
-  font-family: "Kanit"
-}
-
-.habitat_loss_container .subtitle{
-  font-size:15px;
-}
-
-/* .animal_bubble--1{
-  top:65%;
-  left:15%;
-}
-.animal_bubble--2{
-  top:55%;
-  left:15%;
-}
-.animal_bubble--2{
-  top:55%;
-  left:5%;
-}
-.animal_bubble--3{
-  top:55%;
-  left:15%;
-}
-.animal_bubble--4{
-  top:55%;
-  left:15%;
-} */
-
-
-.animal_bubble{
-  width:100px;
-  margin-left: 2.5%;
-  float: left;
-  border-radius:50%;
-  transition: all .5s;
-  margin-top:5%;
-  /* position: absolute !important; */
-  height:100px;
-}
-
-.animal_bubble:hover{
-  transform: scale(1.1);
-  box-shadow:0px 0px 20px teal;
-}
-
-.bubble_active{
-  transform: scale(1.1);
-  border:2px solid limegreen;
-  box-shadow:0px 0px 20px teal;
-}
-
-.detail_container{
-  width:50%;
-  float:right;
-  padding-right:5%;
-}
-
-.detail_title{
-  transform: scale(1);
-  opacity:1;
-  animation: .5s ease-in 1 show_in;
-}
-
-
-.detail_description{
-  transform: scale(1);
-  opacity:1;
-  animation: 1s ease-in 1 show_in;
-}
-
-.bubble_container{
-  width:30%;
-  margin-left:2.5%;
-  float: left;
-}
-
-.animal_bubble img{
-  width:100%;
-  border-radius:50%;
-  object-fit: contain;
-}
-
-.heading--1{
-  font-size:30px;
-  padding-left:2.5%;
-}
-
-.right-light{
-  width:50%;
-  float: right;
-}
-
-.left-light{
-  width:50%;
-  float: left;
-}
-
-.animal{
-  margin-top:5%;
-  font-weight: 100;
-  font-size:17px;
-}
-
-li {
-  font-size:15px;
-  width:70%;
-  list-style-type:square;
-  text-decoration: none;
-  font-weight:200;
 }

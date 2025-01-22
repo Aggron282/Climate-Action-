@@ -24,6 +24,7 @@
     ), url("./../../imgs/oooo.png") no-repeat center;
     background-size: cover;
     color: white;
+    margin-top:-10%;
     font-family: "Kanit", sans-serif;
 }
 

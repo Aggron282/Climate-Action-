@@ -17,8 +17,15 @@ function RenderWarmOceans(){
           <div class="toggle-container toggle-container--warm_ocean">
 
 
-            <p class="toggle_button toggle_button--back" data-toggle="-1">Previous </p>
-            <p class="toggle_button toggle_button--next" data-toggle="1">Next </p>
+            <div class="toggle_button toggle_button--back" data-toggle="-1">
+
+                <p>Previous </p>
+                <div class="underline"></div>
+            </div>
+            <div class="toggle_button toggle_button--next" data-toggle="1">
+              <p>Next </p>
+              <div class="underline"></div>
+            </div>
 
           </div>
 

@@ -134,7 +134,7 @@
 @keyframes up {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-500px);
   }
   100% {
     opacity: 1;
@@ -145,7 +145,7 @@
 @keyframes right {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(500px);
   }
   100% {
     opacity: 1;
@@ -156,7 +156,7 @@
 @keyframes left {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-500px);
   }
   100% {
     opacity: 1;
@@ -178,7 +178,7 @@
 @keyframes down {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(500px);
   }
   100% {
     opacity: 1;

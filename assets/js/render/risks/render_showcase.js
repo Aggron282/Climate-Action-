@@ -25,22 +25,22 @@ function RenderRiskShowcase(){
   <div class="text-container--call">
       <div><p class="title">Help Out Here -</p></div>
       <div class="col-call">
-        <img src = "https://doneereffectief.nl/wp-content/uploads/2024/11/opportunity-green-logo-white.png"/>
+        <img src = "./assets/imgs/org/6.png"/>
       </div>
       <div class="col-call">
-      <img src = "https://doneereffectief.nl/wp-content/uploads/2024/11/opportunity-green-logo-white.png"/>
+        <img src = "./assets/imgs/org/1.png" />
       </div>
       <div class="col-call">
-      <img src = "https://doneereffectief.nl/wp-content/uploads/2024/11/opportunity-green-logo-white.png"/>
+        <img src = "./assets/imgs/org/2.png" />
       </div>
       <div class="col-call">
-      <img src = "https://doneereffectief.nl/wp-content/uploads/2024/11/opportunity-green-logo-white.png"/>
+        <img src = "./assets/imgs/org/3.png" />
       </div>
       <div class="col-call">
-      <img src = "https://doneereffectief.nl/wp-content/uploads/2024/11/opportunity-green-logo-white.png"/>
+        <img src = "./assets/imgs/org/4.png" />
       </div>
       <div class="col-call">
-      <img src = "https://doneereffectief.nl/wp-content/uploads/2024/11/opportunity-green-logo-white.png"/>
+        <img src = "./assets/imgs/org/5.png" />
       </div>
   </div>
   `;

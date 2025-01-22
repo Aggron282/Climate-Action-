@@ -28,7 +28,33 @@
   background:black;
   padding:30px;
   line-height: 1.4;
+  animation:factbox 1s ease-in 1;
+  opacity:1;
+  transform: scaleX(1);
   box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+@keyframes factbox{
+  0%{
+    opacity:0;
+    transform: scaleX(0)
+  }
+  30%{
+    opacity:.5;
+    transform: scaleX(1)
+  }
+  50%{
+    opacity:1;
+    transform: scaleX(1.1);
+  }
+  70%{
+    opacity:1;
+    transform: scaleX(1);
+  }
+  100%{
+    opacity:1;
+    transform: scale(1);
+  }
 }
 
 

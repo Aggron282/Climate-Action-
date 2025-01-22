@@ -21,6 +21,52 @@
 
 }
 
+.join-btn {
+  position: relative;
+  background: rgb(0, 204, 204);
+  border: none;
+  font-family: "Kanit";
+  font-weight: 400;
+  color:#e6e6e6;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  z-index: 1;
+  transition: all .5s !important;
+  transform: scale(1) translateY(-0px);
+
+}
+.join-btn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #eaf818;
+  background-image: linear-gradient(315deg, #00b8b8 0%, #80e0e0 74%); /* Gradient with light turquoise shades */
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),  /* Inner shadow */
+              7px 7px 20px 0px rgba(0,0,0,.1),   /* Outer shadow */
+              4px 4px 5px 0px rgba(0,0,0,.1);    /* Additional outer shadow */
+  transition: all 0.3s ease;
+}
+.join-btn:hover {
+  color: #000;
+}
+.join-btn:hover:after {
+  top: auto;
+  bottom: 0;
+
+  height: 100%;
+}
+.join-btn:active {
+  top: 2px;
+}
+
+.join-btn:hover{
+  transform: scale(1.1) translateY(-5px);
+}
+
 .solution_inner_container{
   overflow: hidden;
   padding:20px;
