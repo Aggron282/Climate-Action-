@@ -196,6 +196,6 @@ nav{
     margin-top:100px;
   }
   .grid-container--pollution{
-    grid-template-rows:repeat(2,250px); 
+    grid-template-rows:repeat(2,250px);
   }
 }
