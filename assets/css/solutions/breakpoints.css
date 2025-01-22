@@ -1,0 +1,16 @@
+@media screen and (max-width:1200px) and (min-width:700px) and (orientation:landscape){
+
+
+  .solution_detail_container{
+    bottom:-40%;
+  }
+
+  .productivity_container{
+    margin-top:20% !important;
+  }
+
+  .form-container{
+    margin-top:-15%;
+  }
+  
+}
