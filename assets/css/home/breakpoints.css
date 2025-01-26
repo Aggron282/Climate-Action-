@@ -92,6 +92,7 @@
     color:white;
   }
   .mission_container{
+    padding-bottom:50%;
     padding-right:60px !important;
     padding-left:60px !important;
   }
@@ -115,9 +116,7 @@
     font-size: 100px !important;
     margin-top:50px
   }
-  .mission_container {
-    padding-bottom:50%;
-  }
+
 
   .why_intro_container .title {
     font-size: 100px;
