@@ -15,6 +15,9 @@
   .showcase_why_container{
     height:80vh;
   }
+  .text-contaier--warm_ocean{
+    margin-top:15%;
+  }
   .why_bubble--1{
     left:70%;
   }
@@ -29,11 +32,39 @@
     top:35%;
     left:17.5%;
   }
+  .text-container--pollution{
+    width:90%;
+  }
+  .fact_box{
+    padding:40px;
+    font-weight: 400;
+    font-family: "Kanit";
+  }
+  .fact_col{
+    padding-top: 40% !important;
+  }
+  .fact_col_button{
+    width:100%;
+    opacity:1;
+  }
+  .why_it_matters_container{
+    top:0%;
+    width:130%;
+    font-size:7rem;
+  }
   .showcase_why_container .title{
     top:10%;
     padding:70px;
   }
-
+  .waves_container{
+    margin-top:-30%;
+  }
+  .warm_ocean_section{
+    height:60vh !important;
+  }
+  .toggle-container--warm_ocean{
+    width:90% !important;
+  }
 }
 
 p{
