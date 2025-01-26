@@ -20,3 +20,22 @@
 p{
   color:white;
 }
+
+@media screen  and (min-width: 728px) and (max-width: 1224px) and (orientation: portrait) {
+
+  .link_box--title {
+    margin-left: 2.5%;
+    margin-right: 10%;
+  }
+  nav{
+    position: absolute !important;
+  }
+  .link_box {
+    margin-left: 2.5%;
+  }
+  .logo_box--image {
+    width: 55%;
+    margin-left: 25%;
+  }
+
+}
