@@ -11,7 +11,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen  and (min-width: 728px) and (max-width: 1224px) and (orientation: portrait) {
   .showcase_why_container{
     height:80vh;
   }
