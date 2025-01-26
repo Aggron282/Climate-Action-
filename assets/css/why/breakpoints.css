@@ -9,3 +9,29 @@
     grid-template-rows:repeat(2,250px);
   }
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .showcase_why_container{
+    height:80vh;
+  }
+  .why_bubble--1{
+    left:70%;
+  }
+  .why_bubble--2{
+    top:70%;
+  }
+  .why_bubble--3{
+    left:70%;
+    top:80%;
+  }
+  .why_bubble--4{
+    top:35%;
+    left:17.5%;
+  }
+  .showcase_why_container .title{
+    top:10%;
+    padding:70px;
+  }
+
+}
