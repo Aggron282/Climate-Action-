@@ -38,6 +38,10 @@
     font-size: 55px;
     color:white;
   }
+  .mission_container{
+    padding-right:60px !important;
+    padding-left:60px !important;
+  }
   .join_us_container {
     top: 50%;
   }
