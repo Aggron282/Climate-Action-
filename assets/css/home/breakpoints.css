@@ -11,6 +11,22 @@
     margin-left: 2.5%;
     margin-right: 10%;
   }
+  p{
+    color:white;
+  }
+  .risks_intro_container{
+    height:50%;
+  }
+  .risks_slideshow{
+    height:100%;
+  }
+  .why_intro_learn{
+    font-size:30px;
+    padding:25px;
+  }
+  nav{
+    position: absolute !important;
+  }
   .link_box {
     margin-left: 2.5%;
   }
@@ -20,6 +36,7 @@
   }
   #company_name {
     font-size: 55px;
+    color:white;
   }
   .join_us_container {
     top: 50%;
