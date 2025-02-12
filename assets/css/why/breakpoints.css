@@ -89,9 +89,25 @@ p{
     left:37.5%;
     top:30%;
   }
+  .text-container--pollution{
+    width:90%;
+  }
+  .fact_col p {
+    font-size: 20px;
+    text-align: center;
+  }
   .why_bubble--4{
     left:37.5%;
     top:60%;
+  }
+  .fact_col_button{
+    width:100%;
+  }
+  .warm_ocean_section{
+    height:80vh;
+  }
+  .warm_ocean_section .grid-container{
+    grid-template-columns: 2.5% 90%;
   }
   .why_bubble--3{
     left:60%;
