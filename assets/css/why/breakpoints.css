@@ -99,6 +99,9 @@ p{
   .text-container--pollution{
     width:90%;
   }
+  .footer{
+    padding-top:15%;
+  }
   .fact_col p {
     font-size: 20px;
     text-align: center;
