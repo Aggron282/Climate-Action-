@@ -78,9 +78,11 @@ p{
     padding:50px;
     padding-top:10% !important;
     padding-bottom: 10%;
+
   }
   .showcase_why_container .title{
     font-size:62px;
+    top:0%;
     position: relative;
   }
   .why_bubble p {
