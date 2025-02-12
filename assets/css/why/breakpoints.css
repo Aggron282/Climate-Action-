@@ -117,4 +117,10 @@ p{
     left:15%;
     top:40%;
   }
+  .why_it_matters_container{
+    height:50vh;
+  }
+  .why_it_matters_container .description{
+    margin-top:-100px;
+  }
 }

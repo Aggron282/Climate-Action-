@@ -21,9 +21,9 @@ container.innerHTML = `
           <p> Links </p>
           <ul>
             <a href = "./index.html" >  <li> Home Page </li> </a>
-            <a href = "./why.html" >  <li> How We Got Here </li> </a>
+            <a href = "./why.html" >  <li> The Why </li> </a>
             <a href = "./risks.html" ><li> The Risks </li> </a>
-            <a href = "./solutions.html" ><li> Solutions </li> </a>
+            <a href = "./solutions.html" ><li> Get Involved </li> </a>
           </ul>
         </div>
 
