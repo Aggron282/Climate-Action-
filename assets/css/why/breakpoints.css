@@ -81,6 +81,7 @@ p{
   }
   .showcase_why_container .title{
     font-size:62px;
+    position: relative;
   }
   .why_bubble p {
     font-size:35px;
@@ -88,6 +89,10 @@ p{
   .why_bubble--1{
     left:37.5%;
     top:30%;
+  }
+  .why_bubble{
+    width:200px;
+    height:200px;
   }
   .text-container--pollution{
     width:90%;
