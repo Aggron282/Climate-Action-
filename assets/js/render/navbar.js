@@ -2,30 +2,36 @@
 var navbar = document.querySelector(".navbar");
 
 
+
 function RenderNavbar(){
 
   navbar.innerHTML = `
-      <div class="link_box link_box--title link_nav--home">
-        <a href = "./index.html" class="link_nav_title link_nav--home">
-          Snowclima Movement
-        </a>
+  <nav class="climate-navbar">
+      <div class="nav-container">
+          <div class="logo">
+              <img src = "./assets/imgs/logo_nav.png"/>
+              <p class="title">Polar Movement </p>
+          </div>
+          <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="why.html">The Why</a></li>
+              <li><a href="risks.html">The Risks</a></li>
+              <li><a href="solutions.html">Get Involved</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
       </div>
-        <div class="link_box link_nav--why">
-          <a href = "./why.html"class="link_nav">
-            How We Got Here
-          </a>
-        </div>
-        <div class="link_box link_nav--risks">
-          <a class="link_nav " href = "./risks.html">
-            The Risks
-          </a>
-        </div>
-        <div class="link_box link_nav--solutions">
-          <a class="link_nav " href  = "./solutions.html">
-            Solutions
-          </a>
-        </div>
-        `
+
+      <!-- Mobile Menu -->
+           <ul class="mobile-menu" id="mobileMenu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Solutions</a></li>
+               <li><a href="#">Impact</a></li>
+               <li><a href="#">Get Involved</a></li>
+           </ul>
+  </nav>
+
+        `;
+
 
         var home_nav = document.querySelector(".link_nav--home");
         var risks_nav = document.querySelector(".link_nav--risks");
