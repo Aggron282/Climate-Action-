@@ -1,4 +1,4 @@
-@media screen and (max-width:1200px) and (min-width:700px) and (orientation:landscape){
+/* @media screen and (max-width:1200px) and (min-width:700px) and (orientation:landscape){
   .waves_container{
     margin-top: -30%;
   }
@@ -69,4 +69,36 @@
 
 p{
   color:white;
+} */
+
+
+@media screen  and (min-width: 728px) and (max-width: 1224px) and (orientation: portrait) {
+
+  .showcase_why_container{
+    padding:50px;
+    padding-top:10% !important;
+    padding-bottom: 10%;
+  }
+  .showcase_why_container .title{
+    font-size:62px;
+  }
+  .why_bubble p {
+    font-size:35px;
+  }
+  .why_bubble--1{
+    left:37.5%;
+    top:30%;
+  }
+  .why_bubble--4{
+    left:37.5%;
+    top:60%;
+  }
+  .why_bubble--3{
+    left:60%;
+    top:40%;
+  }
+  .why_bubble--2{
+    left:15%;
+    top:40%;
+  }
 }

@@ -27,8 +27,8 @@ p{
     margin-left: 2.5%;
     margin-right: 10%;
   }
-  nav{
-    position: absolute !important;
+  .nav-container{
+    grid-template-columns: 40% 60%;
   }
   .link_box {
     margin-left: 2.5%;
