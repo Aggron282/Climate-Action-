@@ -12,5 +12,28 @@
   .form-container{
     margin-top:-15%;
   }
-  
+
+}
+
+@media screen  and (min-width: 728px) and (max-width: 1224px) and (orientation: portrait) {
+
+  .showcase_container--solutions{
+    height:70vh;
+  }
+  .solutions-grid div{
+    padding:20px;
+  }
+  .join_form_container{
+    padding-top:50px;
+    grid-template-columns: 100%;
+  }
+  .impact-section{
+    margin-top:80%;
+  }
+  .metrics{
+    grid-template-columns: repeat(2,45%);
+  }
+  .solutions-grid{
+    grid-template-columns: 100%;
+  }
 }
