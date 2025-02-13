@@ -35,9 +35,7 @@
     padding-top:50px;
     grid-template-columns: 100%;
   }
-  .impact-section{
-    margin-top:80%;
-  }
+
   .metrics{
     grid-template-columns: repeat(2,45%);
   }
