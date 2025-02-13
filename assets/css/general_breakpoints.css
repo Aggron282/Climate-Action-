@@ -32,14 +32,14 @@ p{
   color: white;
   text-align: center;
   font-size: 60px;
-  font-weight: 100;
+  font-weight:500;
   font-family: "Kanit";
 }
 
 .solution_inner_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1%;
+  gap: 30px;
   justify-content: center;
   margin-top: 20px;
 }
@@ -84,7 +84,7 @@ p{
   border: none;
   letter-spacing: 2px;
   font-family: "Kanit";
-  font-size: 17px;
+  font-size: 25px;
   transition: all 1s;
 }
 
@@ -112,7 +112,6 @@ p{
 
 .solutions_intro_container--active .solution_inner_container .solution_choice_container--3 {
   opacity: 1;
-  margin-top:5%;
   animation: solution_3 ease-in 2s 1;
   transform: translateY(0px);
 }
@@ -120,7 +119,20 @@ p{
 /* Responsive Design */
 @media (max-width: 992px) {
   .solution_inner_container {
-    grid-template-columns: repeat(2, 1fr);
+    padding:15%;
+    padding-top:0%;
+    padding-bottom: 20%;
+    grid-template-columns: 1fr;
+
+  }
+  .solution_choice_container{
+    padding-bottom:10%;
+  }
+  .solution_choice_container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 5%;
   }
 }
 

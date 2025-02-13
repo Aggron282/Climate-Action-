@@ -22,11 +22,15 @@
     height:50%;
   }
   .risks_slideshow{
-    height:800px;
+    height:1200px;
   }
   .text_slide .title {
-    font-size:40px;
+    font-size:90px;
   }
+   .text_slide .subtitle {
+     font-size:60px;
+     text-align: center;
+   }
   .why_intro_learn{
     font-size:30px;
     padding:25px;
@@ -95,21 +99,25 @@
     width:200px !important;
     height:200px !important;
   }
-  .landing-form input{
-    max-width: none !important;
-    width:400px !important;
+  .chatgpt-input{
+    padding:10px;
+    width:700px !important;
     font-size:20px !important;
-    padding:20px;
+    padding:40px !important;
     margin-top:50px;
   }
   .landing-form button{
     font-size:20px;
     font-family: "Kanit";
-    width:100%;
+    width:50%;
     padding:1rem;
   }
 
   .showcase{
     height:80vh !important;
+  }
+
+  .solutions_intro_container {
+    padding-top: 25% !important;
   }
 }

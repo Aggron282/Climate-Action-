@@ -40,12 +40,11 @@
     z-index: 9;
     width: 80%;
     text-align: justify;
-    height: 100%;
+    height: 99.2%;
     background: white;
     position: absolute;
-    top: 0;
+    top: -0px;
     right: 0;
-    padding: 20px;
 }
 
 .in_transition--left {
@@ -71,6 +70,9 @@
     background: linear-gradient(to top left, rgba(22, 7, 24, 1), rgba(217, 121, 74, 0.9));
 }
 
+.text_slide{
+  padding-left:35%;
+}
 .text_slide--3 .subtitle {
     font-size: 30px;
     font-weight: 600;
@@ -79,7 +81,6 @@
 .text_slide .title {
     font-size: 80px;
     text-align: left;
-    margin-left: 35%;
     transform: skewX(-5deg);
     margin-top: 1.5%;
     padding: 50px;
@@ -89,7 +90,7 @@
 .text_slide .subtitle {
     font-size: 27px;
     text-align: left;
-    margin-left: 32.5%;
+
     transform: skewX(-5deg);
     padding: 50px;
     font-weight: 400;
@@ -110,7 +111,6 @@
 
 .risk_slide_button {
     width: 50%;
-    margin-left: 35%;
     padding: 10px;
     background: rgb(45, 49, 59);
     border: none;
@@ -165,4 +165,62 @@
 
 .risks_slideshow {
     position: relative;
+}
+
+@media screen and (orientation:portrait){
+  .risks_slideshow--visual {
+    width:100%;
+    clip-path:none;
+
+    position: relative;
+  }
+  .risks_slideshow--text {
+    width:100%;
+  clip-path:none;
+    position: relative;
+  }
+  .text_slide{
+    padding-left:0%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    display: flex;
+   flex-direction: column; /* Stack elements vertically */
+   align-items: center; /* Center horizontally */
+   justify-content: center; /* Center vertically */
+   text-align: center;
+  }
+   .risks_slideshow--visual img{
+     height:57.5vh;
+     width:100%;
+     object-fit: cover;
+     position: relative;
+   }
+
+
+   .in_transition--left {
+       animation: in_top 0.75s ease-in forwards;
+       transform: translateY(0);
+   }
+
+   .away_transition--right {
+       animation: away_bottom 0.5s ease-in !important;
+       opacity: 0;
+       transform: translateY(800px);
+   }
+
+   .in_transition--right {
+       animation: in_bottom 0.75s ease-in forwards;
+       transform: translateY(0);
+    height: 50%;
+    animation: in_bottom 0.75sease-in forwards;
+    transform: translateY(-400px) !important;
+  }
+
+   .away_transition--left {
+       animation: away_top 0.5s ease-in forwards;
+       opacity: 0;
+       transform: translateY(-800px);
+   }
+
 }
