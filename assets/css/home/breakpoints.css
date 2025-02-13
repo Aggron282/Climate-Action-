@@ -22,7 +22,7 @@
     height:50%;
   }
   .risks_slideshow{
-    height:400px;
+    height:800px;
   }
   .why_intro_learn{
     font-size:30px;
@@ -73,9 +73,7 @@
     font-size:30px;
   }
 
-  .solution_choice_container{
-        height: 36vh;
-  }
+
 
 
   .landing-container .title {
