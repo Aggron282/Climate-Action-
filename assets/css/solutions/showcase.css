@@ -142,9 +142,10 @@ h1, h2, p {
   font-weight: 300;
   border: none;
   padding: 10px;
-  font-size: 20px;
-  width:50%;
+  font-size: 30px;
+  width:70%;
   margin-top: 40px;
+  color:black !important;
   cursor: pointer;
   margin-left: 0%;
   transition: all 0.3s ease-in-out;
@@ -176,7 +177,7 @@ h1, h2, p {
   }
 
   .solution_detail_container .title {
-    font-size: 50px;
+    font-size: 80px;
   }
 
   .cta-container .title {
