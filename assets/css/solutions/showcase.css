@@ -1,11 +1,13 @@
 .showcase_container--solutions {
-  background: linear-gradient(to right bottom,
-      rgba(5, 75, 102, 1),  /* Dark teal */
-      rgba(59, 174, 160, .9),/* Light teal */
-      rgba(59, 174, 160, .5),/* Green */
-      rgba(199, 224, 155, 0),
-      rgba(59, 174, 160, .7),
-      rgba(59, 174, 160, 1)
+  background: linear-gradient(to  bottom,
+       /* Dark teal */
+      rgba(5, 75, 102, 1),/* Light teal */
+      /* rgba(59, 174, 160, 1),*/
+      /* rgba(199, 224, 155, 1), */
+      rgba(59, 174, 160, 1),
+      rgba(59, 174, 160, 1),
+      rgba(87,131,143,1),
+        rgba(5, 75, 102, 1)
   ), url("./../../imgs/solutions.png");
   height: 100vh;
   background-size: cover;
@@ -14,9 +16,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   text-align: center;
 }
 
+
+.watermark{
+filter:brightness(0);
+opacity:.1;
+position: absolute;
+right:0%;
+width:40%;
+bottom:0%;
+}
 .showcase_container--solutions .text-container {
   position: relative;
   z-index: 99;
@@ -30,8 +42,27 @@
 .showcase_container--solutions .text-container .title {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
-  font-size: 80px;
-  margin-top: 7.5%;
+  font-size: 100px;
+  margin-top: 0%;
+  z-index: 22;
+  width:100%;
+  position: relative;
+}
+
+.showcase_container--solutions .text-container .title::before {
+
+  content:"Act Now";
+  color:white;
+  opacity: .2;
+  width:100%;
+  text-align: left;
+  color:black;
+  position: absolute;
+  top:-100px;
+  z-index:1;
+  font-weight: 500;
+  font-size:100px;
+
 }
 
 /* Solutions Section */
@@ -49,7 +80,7 @@
   width: 100%;
   background: linear-gradient(to bottom,
       rgba(5, 75, 102, 1),  /* Dark teal */
-      rgba(59, 174, 160, 1),/* Light teal */
+    rgba(5, 75, 102, 1),/* Light teal */
       rgba(59, 174, 160, 1) /* Green */
   );
   padding: 60px;
@@ -112,8 +143,10 @@ h1, h2, p {
   border: none;
   padding: 10px;
   font-size: 20px;
+  width:50%;
   margin-top: 40px;
   cursor: pointer;
+  margin-left: 0%;
   transition: all 0.3s ease-in-out;
 }
 
