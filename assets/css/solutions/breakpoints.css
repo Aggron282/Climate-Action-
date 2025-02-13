@@ -1,24 +1,21 @@
 @media screen and (max-width:1200px) and (min-width:700px) and (orientation:landscape){
 
-
-  .solution_detail_container{
-    bottom:-40%;
-  }
-
-  .productivity_container{
-    margin-top:20% !important;
-  }
-
   .form-container{
     margin-top:-15%;
   }
-
+  .metric p {
+    font-size: 1.6rem;
+  }
+  .s-btn{
+    font-size:20px !important;
+  }
 }
 
 @media screen  and (min-width: 728px) and (max-width: 1224px) and (orientation: portrait) {
   .form-container{
     padding-top:50px;
   }
+
   .form-container h1{
     color:teal !important;
   }
