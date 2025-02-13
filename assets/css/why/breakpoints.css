@@ -80,7 +80,11 @@ p{
     padding-bottom: 10%;
 
   }
-  
+
+  .footer{
+    padding-top:20% !important;
+  }
+
   .showcase_why_container .title{
     font-size:62px;
     top:0%;
