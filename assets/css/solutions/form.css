@@ -2,7 +2,7 @@
 .join_form_container{
   position: relative;
   padding:50px;
-  color:    rgba(59, 174, 160, 1);
+  color: teal;
   display: grid;
   padding-top: 150px;
   grid-template-columns: repeat(2,1fr);
