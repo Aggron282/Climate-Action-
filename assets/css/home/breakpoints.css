@@ -22,7 +22,7 @@
     height:50%;
   }
   .risks_slideshow{
-    height:100%;
+    height:400px;
   }
   .why_intro_learn{
     font-size:30px;
@@ -50,8 +50,8 @@
     margin-left:20px;
   }
   .mission_container .subtitle {
-    font-size: 60px;
-    margin-top: 200px;
+    font-size: 40px;
+    margin-top: 50px;
   }
   .mission_container .title {
     text-align: center !important;
