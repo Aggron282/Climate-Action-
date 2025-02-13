@@ -33,6 +33,9 @@
   opacity: 1;
   /* filter: blur(1px); */
 }
+.form-container h1,.form-container p,.form-container h2{
+  color:teal !important;
+}
 .form-background::before{
   width:100%;
   height: 100%;
