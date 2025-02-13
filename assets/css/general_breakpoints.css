@@ -112,6 +112,7 @@ p{
 
 .solutions_intro_container--active .solution_inner_container .solution_choice_container--3 {
   opacity: 1;
+  margin-top:5%;
   animation: solution_3 ease-in 2s 1;
   transform: translateY(0px);
 }
