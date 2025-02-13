@@ -1,4 +1,4 @@
-.showcase_container--solutions{
+.showcase_container--solutions {
   background: linear-gradient(to right bottom,
       rgba(5, 75, 102, 1),  /* Dark teal */
       rgba(59, 174, 160, .9),/* Light teal */
@@ -7,107 +7,224 @@
       rgba(59, 174, 160, .7),
       rgba(59, 174, 160, 1)
   ), url("./../../imgs/solutions.png");
-  height:100vh;
+  height: 100vh;
   background-size: cover;
-  position: relative;
   background-position: bottom;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.showcase_container--solutions .text-container{
+.showcase_container--solutions .text-container {
   position: relative;
   z-index: 99;
-  padding:40px;
-  font-size:40px;
-  font-family: "Lato";
-  color:white;
+  padding: 40px;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: white;
   text-shadow: 0px 0px 10px black;
 }
 
-.showcase_container--solutions .text-container .title{
-  font-family: "Kanit";
-  font-weight:400;
-  font-size:80px;
-  margin-top:7.5%;
+.showcase_container--solutions .text-container .title {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  margin-top: 7.5%;
 }
 
-.solutions_intro_container{
-  background: linear-gradient(to  top,
+/* Solutions Section */
+.solutions_intro_container {
+  background: linear-gradient(to top,
       rgba(5, 75, 102, 1),
       rgba(5, 75, 102, 1),
-      /* Light teal */
-      rgba(5, 75, 102, 1)/* Green */
-
+      rgba(5, 75, 102, 1)
   );
-  padding-top:5%;
-}
-.solution_detail_container{
-  width:100%;
-  background:black;
-  bottom:-90%;
-  padding:60px;
-  position: absolute;
+  padding: 5% 5%;
+  text-align: center;
 }
 
-.join-btn{
-  border-radius:10px;
-  background:white;
-  font-family:"Kanit";
-  font-weight:300;
-  border:none;
-  padding:10px;
-  font-size:20px;
-  margin-top:40px;
-}
-
-
-.solution_detail_container{
-  background: linear-gradient(to  bottom,
+.solution_detail_container {
+  width: 100%;
+  background: linear-gradient(to bottom,
       rgba(5, 75, 102, 1),  /* Dark teal */
       rgba(59, 174, 160, 1),/* Light teal */
-      rgba(59, 174, 160, 1)/* Green */
-
+      rgba(59, 174, 160, 1) /* Green */
   );
+  padding: 60px;
+  position: relative;
 }
 
-.solution_detail_container .title{
-  font-size:70px;
+.solution_detail_container .title {
+  font-size: 70px;
   text-align: center;
   font-weight: 600;
 }
 
-.solutions-grid{
-  padding:30px;
-  width:100%;
-  padding-left:10px;
-  padding-right:10px;
-  display:grid;
-
+/* Grid Layout */
+.solutions-grid {
+  display: grid;
   grid-template-columns: 30% 70%;
+  gap: 20px;
+  padding: 30px 10px;
+  width: 100%;
+  align-items: center;
 }
 
-.solutions-grid div{
-  padding:40px;
+.solutions-grid div {
+  padding: 40px;
 }
 
-.cta-container .title{
+/* CTA Container */
+.cta-container .title {
   font-weight: 600;
   font-size: 50px;
 }
 
-.cta-container .join-btn{
+.cta-container .join-btn {
   margin-left: 25%;
-  width:50%;
+  width: 50%;
+}
+
+/* Text Styling */
+h1, h2, p {
+  color: white;
 }
 
 .detail-container p {
-  font-family: "Kanit";
-  font-size:25px;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
 }
 
-.inform-container p {
-
+/* Logo Box */
+.logo_box--image {
+  z-index: 99999000 !important;
+  position: relative;
 }
 
-h1,h2,p{
-  color:white;
+/* Join Button */
+.join-btn {
+  border-radius: 10px;
+  background: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-btn:hover {
+  background: #e6e6e6;
+  color: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .showcase_container--solutions .text-container {
+    font-size: 30px;
+  }
+
+  .showcase_container--solutions .text-container .title {
+    font-size: 60px;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .solutions-grid div {
+    padding: 20px;
+  }
+
+  .solution_detail_container .title {
+    font-size: 50px;
+  }
+
+  .cta-container .title {
+    font-size: 40px;
+  }
+
+  .cta-container .join-btn {
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase_container--solutions {
+    height: auto;
+    padding: 20px;
+  }
+
+  .showcase_container--solutions .text-container {
+    font-size: 25px;
+  }
+
+  .showcase_container--solutions .text-container .title {
+    font-size: 50px;
+  }
+
+  .solutions-grid {
+    padding: 15px;
+  }
+
+  .solution_detail_container .title {
+    font-size: 40px;
+  }
+
+  .cta-container .title {
+    font-size: 35px;
+  }
+
+  .cta-container .join-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase_container--solutions .text-container {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .showcase_container--solutions .text-container .title {
+    font-size: 40px;
+  }
+
+  .solution_detail_container {
+    padding: 30px;
+  }
+
+  .solution_detail_container .title {
+    font-size: 35px;
+  }
+
+  .cta-container .title {
+    font-size: 30px;
+  }
+
+  .cta-container .join-btn {
+    width: 100%;
+
+  }
+}
+
+#logo_box img{  margin-left: 35%;
+width: 30%;
+z-index: 99999;
+position: relative;
+}
+#company_name{
+text-shadow: 0px 0px 10px black;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 999999;
 }
