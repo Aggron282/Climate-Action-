@@ -116,4 +116,4 @@ Init();
 
 setInterval(()=>{
     ToggleSlideShowRisks();
-},4000000)
+},10000)
