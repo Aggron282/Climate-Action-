@@ -66,7 +66,7 @@
 .join-btn:hover{
   transform: scale(1.1) translateY(-5px);
 }
-
+/* 
 .solution_inner_container{
   overflow: hidden;
   padding:20px;
@@ -165,4 +165,4 @@
   opacity:1;
   animation:solution_3 ease-in 2s 1;
   transform:translateY(0px);
-}
+} */
