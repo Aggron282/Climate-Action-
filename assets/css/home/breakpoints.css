@@ -86,14 +86,27 @@
     height:80vh;
   }
   .landing-container h1{
-    font-size:5rem;
+    font-size:4rem;
   }
   .logo--show{
-    width:300px !important;
-    height:300px !important;
+    width:200px !important;
+    height:200px !important;
   }
   .landing-form input{
     max-width: none !important;
     width:400px !important;
+    font-size:20px !important;
+    padding:20px;
+    margin-top:50px;
+  }
+  .landing-form button{
+    font-size:20px;
+    font-family: "Kanit";
+    width:100%;
+    padding:1rem;
+  }
+
+  .showcase{
+    height:70vh;
   }
 }
