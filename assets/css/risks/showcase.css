@@ -100,12 +100,6 @@
   font-weight: 400;
 }
 
-
-body {
-  margin: 0;
-  overflow: hidden;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -152,4 +146,7 @@ body {
 
 .container:hover .background-bottom {
   clip-path: circle(100px at var(--x) var(--y));
+}
+p{
+  color:white;
 }
