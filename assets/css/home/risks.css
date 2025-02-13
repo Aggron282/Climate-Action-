@@ -171,9 +171,10 @@
   .risks_slideshow--visual {
     width:100%;
     clip-path:none;
-
+    height:none !important;
     position: relative;
   }
+
   .risks_slideshow--text {
     width:100%;
   clip-path:none;
@@ -197,7 +198,28 @@
      position: relative;
    }
 
+   .text_slide--3 .subtitle {
+       font-size: 30px;
+       font-weight: 600;
+   }
 
+   .text_slide .title {
+       font-size: 80px;
+       text-align: center;
+   }
+
+   .text_slide .subtitle {
+       font-size: 40px;
+       text-align: center;
+   }
+
+   .text_slide .subtitle--2 {
+       font-size: 40px;
+       font-weight: 500;
+   }
+   .risk_slide_button{
+     padding:20px;
+   }
    .in_transition--left {
        animation: in_top 0.75s ease-in forwards;
        transform: translateY(0);
@@ -222,5 +244,9 @@
        opacity: 0;
        transform: translateY(-800px);
    }
+   .in_transition--right{
+     height:100%;
+   }
+   
 
 }
