@@ -162,7 +162,8 @@ h1, h2, p {
   }
 
   .showcase_container--solutions .text-container .title {
-    font-size: 60px;
+    font-size: 130px;
+    line-height: 1.1;
   }
 
   .solutions-grid {
@@ -185,6 +186,8 @@ h1, h2, p {
   .cta-container .join-btn {
     margin-left: 0;
     width: 80%;
+    font-size: 40px !important;
+    padding:20px;
   }
 }
 
