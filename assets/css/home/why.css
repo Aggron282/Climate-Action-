@@ -116,6 +116,7 @@
 
 .why_fixed_background{
   z-index:-1;
+  background-size: cover !important;
   height:100%;
   -webkit-backface-visibility: hidden;
   transform: translate3d(0,0,0);
