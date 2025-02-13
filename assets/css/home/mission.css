@@ -1,13 +1,47 @@
+@media screen and (max-width: 768px) {
+    .mission_container {
+        padding-top: 20%;
+        padding-bottom: 30%;
+        margin-top: -5%;
+        text-align: center;
+    }
+
+    .mission_container .title {
+        font-size: 45px !important;
+        margin-top: 20px;
+    }
+
+    .mission_container .subtitle {
+        font-size: 28px !important;
+        margin-top: 10px;
+    }
+
+    .mission_description {
+        font-size: 22px;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+}
+
+/* Extra Small Screens (Phones Below 400px) */
 @media screen and (max-width: 400px) {
     .mission_container {
-        position: relative;
-        z-index: 999;
+        margin-top: -50%;
+        padding-top: 25%;
         padding-bottom: 40px;
-        margin-top: -85%;
+    }
+
+    .mission_container .title {
+        font-size: 35px !important;
     }
 
     .mission_container .subtitle {
         font-size: 22px !important;
+    }
+
+    .mission_description {
+        font-size: 18px;
+        letter-spacing: 1px;
     }
 }
 
@@ -15,7 +49,6 @@
     padding: 20px 0;
     position: relative;
     overflow: hidden;
-    padding-bottom: 20%;
     background: linear-gradient(
         to bottom,
         rgba(87, 131, 143, 1),
@@ -24,8 +57,8 @@
     ), url("./../../imgs/oooo.png") no-repeat center;
     background-size: cover;
     color: white;
-    margin-top:-10%;
-    padding-top:15%;
+    padding-top: 5%;
+    padding-bottom:10%;
     font-family: "Kanit", sans-serif;
 }
 
@@ -50,11 +83,13 @@
     margin-top: 10px;
     font-weight: 200;
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
+/* Activate description fade-in */
 .mission_description--active {
     opacity: 1;
-    animation: fade_in 4s ease-in 1;
+    animation: fade_in 2s ease-in-out 1;
 }
 
 .mission_vid {
@@ -66,16 +101,12 @@
     object-fit: cover;
 }
 
-.mission_title {
-    transform: translateY(100px);
+.mission_title, .mission_subtitle {
     opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
-.mission_subtitle {
-    transform: translateY(100px);
-    opacity: 0;
-}
-
+/* Slide-in animations */
 @keyframes slide_from_bottom {
     0%, 50% {
         transform: translateY(100px);
@@ -98,14 +129,13 @@
     }
 }
 
+/* Activate animations */
 .mission_title--active {
-    transform: translateY(0);
     opacity: 1;
-    animation: slide_from_bottom 1s ease-in 1;
+    animation: slide_from_bottom 1s ease-in-out 1;
 }
 
 .mission_subtitle--active {
-    transform: translateY(0);
     opacity: 1;
-    animation: slide_from_right 2s ease-in 1;
+    animation: slide_from_right 1.5s ease-in-out 1;
 }
