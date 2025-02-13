@@ -82,3 +82,58 @@ opacity: 1; /* Ensures the white color is fully visible */
 background-color: teal;
 color:white;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .showcase {
+    height: 100vh; /* Adjust height for smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .landing-container {
+    width: 90%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .logo--show {
+    width: 120px; /* Reduce logo size */
+  }
+
+  .landing-container .title {
+    font-size: 3rem; /* Reduce font size for better fit */
+    margin-bottom: 0.5rem;
+  }
+
+  .landing-form input {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .landing-form button {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+}
