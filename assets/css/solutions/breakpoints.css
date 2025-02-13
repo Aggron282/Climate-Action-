@@ -1,7 +1,7 @@
 @media screen and (max-width:1200px) and (min-width:700px) and (orientation:landscape){
 
-  .form-container{
-    margin-top:-15%;
+  .join_form_container{
+    padding-top:150px;
   }
   .metric p {
     font-size: 1.6rem;
