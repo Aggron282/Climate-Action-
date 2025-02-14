@@ -165,3 +165,21 @@ p{
   }
 
 }
+
+@media screen and (max-device-width:480px){
+  .solutions_intro_container {
+    padding-top: 10% !important;
+  }
+    .solutions_intro_container .title{
+      font-size:80px !important;
+    }
+    .solutions_intro_container{
+    padding:10% !important;
+    margin-top:40% !important;
+  }
+
+.solution_choice_container button{
+  font-size:40px !important;
+  width:80% !important;
+}
+}

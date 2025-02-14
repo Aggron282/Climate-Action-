@@ -238,9 +238,7 @@
     height:80vh !important;
   }
 
-  .solutions_intro_container {
-    padding-top: 10% !important;
-  }
+
   .landing-form input, .landing-form button{
     font-size:40px !important;
   }
@@ -267,13 +265,6 @@
       font-size:40px;
       padding:30px;
     }
-    .solutions_intro_container .title{
-      font-size:80px;
-    }
-    .solutions_intro_container{
-    padding:10% !important;
-    margin-top:40% !important;
-  }
 
 
 
