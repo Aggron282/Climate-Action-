@@ -145,6 +145,9 @@
   .solution_choice_container img{
     height:150px !important;
   }
+  .watermark{
+    bottom:-80% !important;
+  }
   .showcase_container--solutions{
     background: linear-gradient(to  bottom,
          /* Dark teal */
