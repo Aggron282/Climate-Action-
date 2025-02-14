@@ -140,3 +140,85 @@ p{
     margin-top:-100px;
   }
 }
+
+
+@media screen  and (max-width: 490px) and (orientation: portrait) {
+
+  .showcase_why_container{
+    padding:50px;
+    padding-top:2.5% !important;
+    padding-bottom: 10%;
+
+  }
+
+  .footer{
+    padding-top:20% !important;
+  }
+
+  .showcase_why_container .title{
+    font-size:62px;
+    top:0%;
+    position: relative;
+  }
+  .why_bubble p {
+    font-size:35px;
+  }
+  .why_bubble--1{
+    left:37.5%;
+    top:30%;
+  }
+  .why_bubble{
+    width:200px;
+    height:200px;
+  }
+  .text-container--pollution{
+    width:90%;
+  }
+  .footer{
+    padding-top:15%;
+  }
+  .fact_col p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .why_bubble--4{
+    left:37.5%;
+    top:40%;
+  }
+  .why_bubble--1{
+    top:40%;
+  }
+  .fact_col button{
+    width:100%;
+
+  }
+  .warm_ocean_section{
+    height:80vh;
+  }
+  .warm_ocean_section .grid-container{
+    grid-template-columns: 2.5% 90%;
+  }
+  .why_bubble--3{
+    left:60%;
+    top:30%;
+  }
+  .text_slideshow_column{
+    margin-top:-40%;
+  }
+  .toggle-container--warm_ocean{
+    width:80%;
+  }
+  .lava{
+    bottom:-10%;
+  }
+  .why_bubble--2{
+    left:15%;
+    top:30%;
+  }
+  .why_it_matters_container{
+    height:50vh;
+  }
+  .why_it_matters_container .description{
+    margin-top:-100px;
+  }
+}
