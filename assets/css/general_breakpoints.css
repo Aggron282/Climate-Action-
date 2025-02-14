@@ -180,8 +180,8 @@ p,h2,h1{
     }
     .solutions_intro_container{
     padding:10% !important;
-    margin-top:30% !important;
-    padding-top:30% !important;
+    /* margin-top:30% !important; */
+    padding-top:10% !important;
   }
 
   .solution_choice_container button{

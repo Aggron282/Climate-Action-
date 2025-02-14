@@ -239,7 +239,7 @@
 
    .in_transition--right {
        animation: in_bottom 0.75s ease-in forwards;
-       transform: translateY(400px);
+       transform: translateY(800px);
         height: 50%;
         animation: in_bottom 0.75sease-in forwards;
   }

@@ -275,14 +275,14 @@
 
 @keyframes away_bottom {
   0%{
-    transform:translateX(0px);
+    transform:translateX(0px) translateY(700px);
       opacity:1;
   }
   50%{
     opacity:.7;
   }
   100%{
-    transform:translateX(800px);
+    transform:translateX(800px) translateY(700px);
     opacity:0;
   }
 }
@@ -305,14 +305,14 @@
 @keyframes in_bottom {
   0%{
       opacity:0;
-    transform:translateX(800px) translateY(600px);
+    transform:translateX(800px) translateY(700px);
   }
   50%{
     opacity:1
   }
   100%{
       opacity:1;
-    transform:translateX(0px)  translateY(600px);
+    transform:translateX(0px)  translateY(700px);
   }
 }
 
