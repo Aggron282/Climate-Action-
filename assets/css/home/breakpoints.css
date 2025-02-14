@@ -272,3 +272,40 @@
 
 
 }
+
+
+@media screen and (max-device-width:490px) and (orientation:landscape){
+  .landing-form input {
+    padding:25px !important;
+  }
+  .landing-container{
+    font-size:4rem !important;
+  }
+  .showcase{
+    height:150vh !important;
+  }
+  .risks_intro_container{
+    position: absolute !important;
+    z-index:-1 !important;
+    visibility: hidden !important;
+  }
+  .solutions_intro_container{
+    margin-top:0% !important;
+    padding-top:10% !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+  .solution_inner_container{
+    grid-template-columns: repeat(3,1fr) !important;
+    padding:0 !important;
+  }
+  .solution_choice_container img {
+    height:250px !important;
+  }
+  .solution_choice_container p {
+    font-size:30px !important;
+  }
+  .solution_choice_container button{
+    font-size:30px !important;
+  }
+}
