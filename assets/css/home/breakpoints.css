@@ -124,7 +124,7 @@
 
 
 @media screen and (max-width:490px){
-  .landing-form input, button{
+  .landing-form input, .landing-form button{
     font-size:40px !important;
   }
     .landing-form input{
