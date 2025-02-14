@@ -119,6 +119,9 @@
      padding:0% !important;
      padding-bottom: 20% !important;
    }
+   .solutions_intro_container{
+     padding-top:0% !important;
+   }
 }
 
 @media screen  and (max-device-width: 490px) and (orientation:landscape){
