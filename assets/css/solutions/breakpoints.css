@@ -145,4 +145,14 @@
   .solution_choice_container img{
     height:150px !important;
   }
+  .showcase_container--solutions{
+    background: linear-gradient(to  bottom,
+         /* Dark teal */
+        /* rgba(59, 174, 160, 1),*/
+        /* rgba(199, 224, 155, 1), */
+        rgba(59, 174, 160, 1),
+        rgba(59, 174, 160, 1),
+        rgba(87,131,143,1),
+          rgba(5, 75, 102, 1)
+    ), url("./../../imgs/solutions.png") !important;
 }
