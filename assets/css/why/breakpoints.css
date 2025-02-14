@@ -261,3 +261,43 @@ p{
   margin-top:0px;
 }
 }
+
+@media screen  and (max-device-width: 490px) and (orientation: landscape) {
+  .showcase_why_container .title{
+  left:5%;
+  top:10%;
+  }
+  .why_bubble--1{
+    left:37.5% !important;top:40% !important;
+  }
+  .why_bubble--2{
+    left:20% !important;
+    top:70% !important;
+  }
+  .why_bubble--3{
+    left:5% !important;
+    top:40% !important;
+  }
+  .why_bubble--4{
+    left:67.5% !important;
+    top:65% !important;
+  }
+  .text_slideshow_column{
+    margin-top:-170px !important;
+  }
+  .warm_ocean_section{
+    height:140vh !important;
+  }
+  .text-container--pollution{
+    width:90% !important;
+  }
+  .text-container--pollution .description{
+    margin-top:10%;
+  }
+  .fact_col button{
+    width:100% !important;
+  }
+  .lava{
+    bottom:-15% !important;
+  }
+}
