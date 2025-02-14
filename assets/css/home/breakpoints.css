@@ -269,6 +269,22 @@
       padding:30px;
     }
 
+    .nav-container{
+      padding:30px;
+
+    }
+    .logo .title{
+      margin-left:-5px;
+      font-size:70px !important;
+    }
+    .logo img {
+      height:120px;
+      width:120px;
+    }
+    .hamburger{
+
+      font-size:74px;
+    }
 
 
 }
