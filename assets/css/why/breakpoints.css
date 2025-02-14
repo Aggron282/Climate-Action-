@@ -244,4 +244,13 @@ p{
     width:100%;
     color:black;
   }
+  .why_it_matters_container{
+    height:70vh;
+  }
+  .why_it_matters_container .title{
+    font-size:3.5rem;
+  }
+.why_it_matters_container  .description{
+  margin-top:0px;
+}
 }

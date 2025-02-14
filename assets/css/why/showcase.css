@@ -1,22 +1,22 @@
 @media screen and (max-width: 400px) {
   .why_bubble--1 {
     left: 5% !important;
-    top: 45% !important;
+    top: 55% !important;
   }
 
   .why_bubble--2 {
     left: 55% !important;
-    top: 45% !important;
+    top: 55% !important;
   }
 
   .why_bubble--3 {
     left: 5% !important;
-    top: 65% !important;
+    top: 75% !important;
   }
 
   .why_bubble--4 {
     left: 55% !important;
-    top: 65% !important;
+    top: 75% !important;
   }
 
   .showcase_why_container {
@@ -28,7 +28,7 @@
     font-family: "Kanit", sans-serif;
     font-weight: bold !important;
     letter-spacing: 2px;
-    margin-top: 25%;
+    margin-top: 5%;
     line-height: 1.5;
     font-size: 24px;
   }
