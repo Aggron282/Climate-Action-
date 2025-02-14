@@ -115,6 +115,10 @@
    .solution_choice_container button{
      font-size:20px !important;
    }
+   .solution_inner_container{
+     padding:0% !important;
+     padding-bottom: 20% !important;
+   }
 }
 
 @media screen  and (max-device-width: 490px) and (orientation:landscape){
