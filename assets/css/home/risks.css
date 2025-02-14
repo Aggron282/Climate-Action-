@@ -238,7 +238,6 @@
        transform: translateY(400px);
         height: 50%;
         animation: in_bottom 0.75sease-in forwards;
-        transform: translateY(-400px) !important;
   }
 
    .away_transition--left {
