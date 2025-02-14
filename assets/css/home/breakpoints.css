@@ -133,4 +133,14 @@
     .landing-container .title{
       font-size:9rem;
     }
+    .in_transition--right{
+      height:50vh !important;
+    }
+    .risks_slideshow--visual{
+      height:20vh !important;
+    }
+    .text_slide button{
+      font-size:40px;
+      padding:30px;
+    }
 }
