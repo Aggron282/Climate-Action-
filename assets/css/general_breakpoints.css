@@ -176,10 +176,12 @@ p,h2,h1{
   }
     .solutions_intro_container .title{
       font-size:80px !important;
+      margin-bottom:100px;
     }
     .solutions_intro_container{
     padding:10% !important;
-    margin-top:40% !important;
+    margin-top:60% !important;
+    padding-top:30% !important;
   }
 
   .solution_choice_container button{
