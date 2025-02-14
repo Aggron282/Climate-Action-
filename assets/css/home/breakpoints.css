@@ -160,8 +160,8 @@
   .mission_container{
     padding-bottom:10%;
     padding-top:20px;
-    padding-right:60px !important;
-    padding-left:60px !important;
+    padding-right:60px ;
+    padding-left:60px ;
   }
   .join_us_container {
     top: 50%;
@@ -179,8 +179,8 @@
     margin-top: 20px;
   }
   .mission_container .title {
-    text-align: center !important;
-    font-size: 100px !important;
+    text-align: center ;
+    font-size: 100px ;
     margin-top:50px
   }
 
