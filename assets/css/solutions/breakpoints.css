@@ -48,3 +48,41 @@
     grid-template-columns: 100%;
   }
 }
+
+
+
+@media screen  and (max-device-width: 490px){
+   .showcase_container--solutions{
+     height:100vh;
+   }
+   .showcase_container--solutions .text_container .title{
+     font-size:80px;
+     text-align: left;
+   }
+
+   .showcase_container--solutions .text_container .title::before{
+     font-size:80px;
+     width:160%;
+   }
+   .watermark{
+     right:-34%;
+     bottom:20%;
+   }
+   .solution_detail_container .title{
+     font-size:85px !important;
+   }
+   .detail-container{
+     text-align: left;
+     font-size:20px;
+   }
+   .impact-section h1{
+     font-size: 6rem;
+   }
+
+   .metrics{
+     grid-template-columns: 1fr;
+   }
+   .solutions_intro_container .title{
+     font-size:45px !important;
+   }
+}
