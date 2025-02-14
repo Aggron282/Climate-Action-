@@ -222,4 +222,26 @@ p{
   .why_it_matters_container .description{
     margin-top:-100px;
   }
+  .fact_grid{
+    grid-template-columns: 1fr;
+  }
+  .fact-content .description{
+    font-size:17px;
+  }
+  .img_col .title{
+    font-size:30px !important;
+  }
+  .fact-content .subtitle{
+    font-weight:900;
+
+    font-size:18px;
+  }
+  .fact-content .description{
+    font-size:17px;
+    margin-top:2.5%;
+  }
+  .fact-content a button{
+    width:100%;
+    color:black;
+  }
 }
