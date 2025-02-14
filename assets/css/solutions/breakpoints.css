@@ -59,6 +59,9 @@
      font-size:80px !important;
      text-align: left !important;
    }
+   .join_form_container{
+     padding:10px !important;grid-template-columns: 1fr;
+   }
 
    .showcase_container--solutions .text-container .title::before{
      font-size:80px;
