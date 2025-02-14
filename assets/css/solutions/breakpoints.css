@@ -73,9 +73,9 @@
      right:-34%;
      bottom:20%;
    }
-   .solution_detail_container .title{
+   /* .solution_detail_container .title{
      font-size:85px !important;
-   }
+   } */
    .cta--title{
      font-size:45px !important;
    }
@@ -90,7 +90,25 @@
    .metrics{
      grid-template-columns: 1fr;
    }
-   .solutions_intro_container .title{
+   /* .solutions_intro_container .title{
      font-size:45px !important;
+   } */
+
+   .solutions_intro_container{
+     margin-top:0% !important;
+
+   }
+   .solutions_intro_container .title {
+     font-size:70px !important;
+   }
+   .solution_choice_container img {
+     height:200px;
+   }
+   .solution_choice_container p {
+     font-size:25px !important;
+
+   }
+   .solution_choice_container button{
+     font-size:30px !important;
    }
 }
