@@ -275,14 +275,14 @@
 
 @keyframes away_bottom {
   0%{
-    transform:translateY(0px);
+    transform:translateX(0px);
       opacity:1;
   }
   50%{
     opacity:.7;
   }
   100%{
-    transform:translateY(800px);
+    transform:translateX(800px);
     opacity:0;
   }
 }
@@ -291,28 +291,28 @@
 
   0%{
       opacity:0;
-    transform:translateY(-800px);
+    transform:translateX(-800px);
   }
   50%{
     opacity:1
   }
   100%{
       opacity:1;
-    transform:translateY(0px);
+    transform:translateX(0px);
   }
 }
 
 @keyframes in_bottom {
   0%{
       opacity:0;
-    transform:translateY(800px);
+    transform:translateX(800px);
   }
   50%{
     opacity:1
   }
   100%{
       opacity:1;
-    transform:translateY(0px);
+    transform:translateX(0px);
   }
 }
 
