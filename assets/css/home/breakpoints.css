@@ -5,7 +5,7 @@
   }
 }
 
-@media screen  and (min-width: 800px) and (max-width: 1224px) and (orientation: portrait) {
+@media screen  and (min-width: 728px) and (max-width: 1224px) and (orientation: portrait) {
 
   video{
     position: absolute;
@@ -123,7 +123,7 @@
 }
 
 
-@media screen and (max-width:780px){
+@media screen and (max-device-width:490px){
   .landing-form input, .landing-form button{
     font-size:40px !important;
   }
