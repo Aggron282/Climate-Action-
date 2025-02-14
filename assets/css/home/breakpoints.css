@@ -121,3 +121,16 @@
     padding-top: 10% !important;
   }
 }
+
+
+@media screen and (max-width:490px){
+  .landing-form input, button{
+    font-size:40px !important;
+  }
+    .landing-form input{
+      padding:45px !important;
+    }
+    .landing-container .title{
+      font-size:9rem;
+    }
+}
