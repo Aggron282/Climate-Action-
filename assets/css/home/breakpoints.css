@@ -166,6 +166,10 @@
   .join_us_container {
     top: 50%;
   }
+  .s-btn{
+    width:80%;
+    font-size:60px;
+  }
   .checkbox_join{
     margin-top:50px;
     height:40px;width:40px;
@@ -267,7 +271,7 @@
       font-size:80px;
     }
     .solutions_intro_container{
-    padding:20% !important;
+    padding:10% !important;
     margin-top:40% !important;
   }
 
