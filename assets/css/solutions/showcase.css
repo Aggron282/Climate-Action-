@@ -108,7 +108,7 @@ bottom:0%;
 }
 
 /* CTA Container */
-.cta-container .title {
+.cta-container p {
   font-weight: 600;
   font-size: 40px;
 }
@@ -180,7 +180,7 @@ h1, h2, p {
     font-size: 80px;
   }
 
-  .cta-container .title {
+  .cta-container p {
     font-size: 40px;
   }
 

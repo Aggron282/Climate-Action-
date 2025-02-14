@@ -55,21 +55,25 @@
    .showcase_container--solutions{
      height:100vh;
    }
-   .showcase_container--solutions .text_container .title{
-     font-size:80px;
-     text-align: left;
+   .showcase_container--solutions .text-container .title{
+     font-size:80px !important;
+     text-align: left !important;
    }
 
-   .showcase_container--solutions .text_container .title::before{
+   .showcase_container--solutions .text-container .title::before{
      font-size:80px;
      width:160%;
    }
    .watermark{
+     width:100%;
      right:-34%;
      bottom:20%;
    }
    .solution_detail_container .title{
      font-size:85px !important;
+   }
+   .cta--title{
+     font-size:45px !important;
    }
    .detail-container{
      text-align: left;
