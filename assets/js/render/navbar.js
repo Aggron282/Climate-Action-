@@ -23,10 +23,10 @@ function RenderNavbar(){
 
       <!-- Mobile Menu -->
            <ul class="mobile-menu" id="mobileMenu">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Solutions</a></li>
-               <li><a href="#">Impact</a></li>
-               <li><a href="#">Get Involved</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="solutions.html">Solutions</a></li>
+               <li><a href="risks.html">Risks</a></li>
+               <li><a href="why.html">The Why</a></li>
            </ul>
   </nav>
 
