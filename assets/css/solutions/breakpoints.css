@@ -129,6 +129,7 @@
     padding-top:0 !important;
   }
   .solution_inner_container{
+    grid-template-columns: repeat(3,1fr) !important;
     padding:0% !important;
     padding-bottom:20% !important;
   }
