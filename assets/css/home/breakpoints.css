@@ -133,6 +133,9 @@
     .landing-container .title{
       font-size:9rem;
     }
+    .risks_intro_container{
+      height:100%;
+    }
     .in_transition--right{
       height:50vh !important;
     }
@@ -143,7 +146,11 @@
       font-size:40px;
       padding:30px;
     }
+    .solutions_intro_container .title{
+      font-size:80px;
+    }
     .solutions_intro_container{
     padding:20% !important;
+    margin-top:40% !important;
   }
 }
