@@ -139,7 +139,7 @@
 }
 
 /* 🍃 Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 508px) {
     .nav-container {
         grid-template-columns: 1fr auto;
     }
