@@ -62,6 +62,7 @@
    font-size:20px;
    border-radius:10px;
    transition: all .4s;
+   padding:20px;
    position: relative;
    z-index:99999 !important;
    transform: translateY(0px);
