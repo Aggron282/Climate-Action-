@@ -156,20 +156,20 @@ p{
   }
 
   .showcase_why_container .title{
-    font-size:62px;
+    font-size:44px;
     top:0%;
     position: relative;
   }
   .why_bubble p {
-    font-size:35px;
+    font-size:25px;
   }
   .why_bubble--1{
     left:37.5%;
     top:30%;
   }
   .why_bubble{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
   }
   .text-container--pollution{
     width:90%;
@@ -183,10 +183,10 @@ p{
   }
   .why_bubble--4{
     left:37.5%;
-    top:40%;
+    top:60%;
   }
   .why_bubble--1{
-    top:40%;
+    top:60%;
   }
   .fact_col button{
     width:100%;
@@ -200,7 +200,7 @@ p{
   }
   .why_bubble--3{
     left:60%;
-    top:30%;
+    top:80%;
   }
   .text_slideshow_column{
     margin-top:-40%;
@@ -213,7 +213,7 @@ p{
   }
   .why_bubble--2{
     left:15%;
-    top:30%;
+    top:80%;
   }
   .why_it_matters_container{
     height:50vh;
