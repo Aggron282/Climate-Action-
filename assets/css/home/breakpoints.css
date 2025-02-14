@@ -282,7 +282,8 @@
       width:120px;
     }
     .hamburger{
-
+      z-index: 99;
+      position: relative;
       font-size:74px;
     }
 
