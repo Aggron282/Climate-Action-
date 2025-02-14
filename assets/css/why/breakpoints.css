@@ -193,7 +193,8 @@ p{
 
   }
   .warm_ocean_section{
-    height:80vh;
+    padding-top:100px;
+    height:none !important;
   }
   .warm_ocean_section .grid-container{
     grid-template-columns: 2.5% 90%;
@@ -206,7 +207,7 @@ p{
     margin-top:-40%;
   }
   .toggle-container--warm_ocean{
-    width:80%;
+    width:100%;
   }
   .lava{
     bottom:-10%;
