@@ -183,10 +183,10 @@ p{
   }
   .why_bubble--4{
     left:37.5%;
-    top:60%;
+    top:55%;
   }
   .why_bubble--1{
-    top:60%;
+    top:55%;
   }
   .fact_col button{
     width:100%;
@@ -200,7 +200,7 @@ p{
     grid-template-columns: 2.5% 90%;
   }
   .why_bubble--3{
-    left:60%;
+    left:85%;
     top:80%;
   }
   .text_slideshow_column{
@@ -214,7 +214,7 @@ p{
   }
   .why_bubble--2{
     left:15%;
-    top:80%;
+    top:85%;
   }
   .why_it_matters_container{
     height:50vh;
