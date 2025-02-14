@@ -160,6 +160,9 @@
   .landing-container .title{
     font-size:4rem !important;
   }
+  .s-btn{
+    font-size:30px !important;
+  }
   .showcase_container--solutions{
     background: linear-gradient(to  bottom,
          /* Dark teal */
