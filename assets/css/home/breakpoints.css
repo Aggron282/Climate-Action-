@@ -127,6 +127,10 @@
   .landing-form input, .landing-form button{
     font-size:40px !important;
   }
+  .logo--show{
+    width:300px ;
+    height:300px ;
+  }
     .landing-form input{
       padding:45px !important;
     }
