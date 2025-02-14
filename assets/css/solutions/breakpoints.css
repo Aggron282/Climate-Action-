@@ -106,6 +106,7 @@
    }
    .solution_choice_container p {
      font-size:25px !important;
+     padding:10px;
 
    }
    .solution_choice_container button{
