@@ -138,7 +138,7 @@
   }
   .solution_inner_container{
     grid-template-columns: repeat(3,1fr) !important;
-    padding:0% !important;
+    padding:5% !important;
     padding-bottom:20% !important;
   }
   .solution_choice_container p{
@@ -156,6 +156,9 @@
   }
   .watermark{
     bottom:-80% !important;
+  }
+  .landing-container .title{
+    font-size:4rem !important;
   }
   .showcase_container--solutions{
     background: linear-gradient(to  bottom,
