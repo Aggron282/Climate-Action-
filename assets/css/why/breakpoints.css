@@ -142,7 +142,7 @@ p{
 }
 
 
-@media screen  and (max-width: 490px) and (orientation: portrait) {
+@media screen  and (max-device-width: 490px) and (orientation: portrait) {
 
   .showcase_why_container{
     padding:50px;
@@ -228,8 +228,15 @@ p{
   .fact-content .description{
     font-size:17px;
   }
+  .fact-content{
+    padding-bottom:30%;
+    margin-top:20%;
+  }
+  .fact-content button{
+    margin-top:20%;
+  }
   .img_col .title{
-    font-size:30px !important;
+    font-size:35px !important;
   }
   .fact-content .subtitle{
     font-weight:900;
