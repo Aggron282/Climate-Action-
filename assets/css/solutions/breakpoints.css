@@ -55,6 +55,9 @@
    .showcase_container--solutions{
      height:100vh;
    }
+   p,h2,h1{
+     line-height: 1.1;
+   }
    .showcase_container--solutions .text-container .title{
      font-size:80px !important;
      text-align: left !important;
