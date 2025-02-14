@@ -178,8 +178,9 @@ p{
     margin-top:40% !important;
   }
 
-.solution_choice_container button{
-  font-size:40px !important;
-  width:80% !important;
-}
+  .solution_choice_container button{
+    font-size:40px !important;
+    width:80% !important;
+  }
+  
 }
