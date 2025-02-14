@@ -139,7 +139,7 @@
     height:50%;
   }
   .risks_slideshow{
-    height:1200px;
+    height:1800px;
   }
   .text_slide .title {
     font-size:70px;
@@ -255,8 +255,11 @@
     .risks_intro_container{
       height:100%;
     }
+    .text_slide .subtitle{
+      font-size:45px !important;
+    }
     .in_transition--right{
-      height:50vh !important;
+      height:40vh !important;
     }
     .risks_slideshow--visual{
       height:20vh !important;

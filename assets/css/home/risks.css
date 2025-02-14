@@ -186,11 +186,15 @@
     text-align: center;
     justify-content: center;
     display: flex;
+    padding-top:10%;
     display: flex;
    flex-direction: column; /* Stack elements vertically */
    align-items: center; /* Center horizontally */
    justify-content: center; /* Center vertically */
    text-align: center;
+  }
+  .d-s{
+    font-size:25px;
   }
    .risks_slideshow--visual img{
      height:57.5vh;
@@ -246,7 +250,7 @@
        transform: translateY(-800px);
    }
    .in_transition--right{
-     height:60vh !important;
+     height:50vh !important;
      z-index:9999;;
    }
 
