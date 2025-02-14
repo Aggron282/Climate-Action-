@@ -308,4 +308,7 @@
   .solution_choice_container button{
     font-size:30px !important;
   }
+  .landing-container .title{
+    font-size:4rem !important;
+  }
 }
