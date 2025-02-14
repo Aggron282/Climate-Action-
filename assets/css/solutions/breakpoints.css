@@ -116,3 +116,33 @@
      font-size:20px !important;
    }
 }
+
+@media screen  and (max-device-width: 490px) and (orientation:landscape){
+  .showcase_container--solutions .text-container .title{
+    margin-top:20% !important;
+  }
+  .solution_detail_container .title{
+    font-size:70px !important;
+    padding-top:5%;
+  }
+  .solutions_intro_container{
+    padding-top:0 !important;
+  }
+  .solution_inner_container{
+    padding:0% !important;
+    padding-bottom:20% !important;
+  }
+  .solution_choice_container p{
+    padding:30px;
+    font-size:18px;
+  }
+  .solution_choice_container a button{
+    font-size:17px !important;
+  }
+  .join_form_container{
+    margin-top:-140px !important;
+  }
+  .solution_choice_container img{
+    height:150px !important;
+  }
+}
